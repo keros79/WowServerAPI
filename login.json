@@ -15,6 +15,7 @@ Request
 Response
 {
   "api_ver":String, // rest api 버전 ("1.0")
+  "session_id":String, // (optional) 로그인 성공 시 토큰값
   "access_token":String, // (optional) 로그인 성공 시 토큰값
   "error":String, // (optional) 에러 메시지
 }

@@ -5,7 +5,7 @@ Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
   "id":String, // 사용자 아이디
-  "access_token":String // 저장된 토큰값
+  "session_id":String, // 세션 아이디
 }
 
 Response
