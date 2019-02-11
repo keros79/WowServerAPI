@@ -10,7 +10,7 @@ Response
 {
   "ver":String, // rest api 버전 ("2.0")
   "error":String, // (optional) 에러 메시지 (error 이면 아래 필드는 다 없음)
-  "band_no":String, // 밴드 번호
+  "band_no":Integer, // 밴드 번호
   "band_admin":String, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
   "owner_id":String, // 작성자 아이디
   "owner_name":String, // 작성자 이름
@@ -21,10 +21,25 @@ Response
   "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
   "title":String, // 이름
   "body":String, // 본문 내용 HTML 형식
-  "attach":StringArray[ // (optional) 첨부파일명 ("xxx.jpg, xxx.zip...")
-    String,
-    String
-    ...
+  "attach_image":StringArray // (optional) 첨부 이미지 파일주소
+  [ 
+    String,String,...
+  ],
+  "attach_movie":StringArray // (optional) 첨부 동영상 파일주소
+  [ 
+    String,String,...
+  ],
+  "attach_file":StringArray // (optional) 첨부 파일 파일주소
+  [ 
+    String,String,...
+  ],
+  "attach_vote":ObjectArray // (optional) 투표 정보
+  [ 
+    {
+      "vote_no":Integer,
+      "title":String, // 제목
+      "url":String, // 투표 링크 url
+    }
   ],
   "reply_cnt":Integer, // (optional) 댓글 수 (0보다 클 경우)
   "read_cnt":Integer, // (optional) 읽은 사람 수(0보다 클 경우)

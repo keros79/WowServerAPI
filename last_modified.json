@@ -3,7 +3,6 @@ GET /last_modified
 
 Request
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
 }
 
 Response

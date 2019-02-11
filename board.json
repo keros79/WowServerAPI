@@ -14,7 +14,7 @@ Response
 {
   "ver":String, // rest api 버전 ("2.0")
   "error":String, // (optional) 에러 메시지
-  "band_no":String, // 밴드 넘버
+  "band_no":Integer, // 밴드 넘버
   "band_admin":String, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
   "post":ObjectArray // (optional) 최근 순서
   [
@@ -24,15 +24,30 @@ Response
       "owner_msg":String, // (optional) 작성자 상태 메시지
       "owner_img":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
       "date":Date, // 작성 날짜 (Date 타입)
-      "post_no":String, // 게시글 번호
+      "post_no":Integer, // 게시글 번호
       "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
       "title":String, // 이름
       "body":String, // 본문 내용 HTML 형식 (라인 수 제한된)
       "has_more":Boolean, // (optional) 라인 수가 짤릴 경우 더보기 표시 여부
-      "attach":StringArray[ // (optional) 첨부파일명 ("xxx.jpg, xxx.zip...")
-        String,
-        String
-        ...
+      "attach_image":StringArray // (optional) 첨부 이미지 파일주소
+      [ 
+        String,String,...
+      ],
+      "attach_movie":StringArray // (optional) 첨부 동영상 파일주소
+      [ 
+        String,String,...
+      ],
+      "attach_file":StringArray // (optional) 첨부 파일 파일주소
+      [ 
+        String,String,...
+      ],
+      "attach_vote":ObjectArray // (optional) 투표 정보
+      [ 
+        {
+          "vote_no":Integer,
+          "title":String, // 제목
+          "url":String, // 투표 링크 url
+        }
       ],
       "reply_cnt":Integer, // (optional) 댓글 수 (0보다 클 경우)
       "read_cnt":Integer, // (optional) 읽은 사람 수(0보다 클 경우)
