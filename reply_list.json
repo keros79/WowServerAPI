@@ -1,7 +1,7 @@
 GET /reply_list/{post_no}
 지정된 게시글의 댓글 리스트 요청 api
 
-Request
+Request Parameter
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
   "date":Date, // 지정 날짜

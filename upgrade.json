@@ -1,7 +1,7 @@
 GET /upgrade
 앱 버전 정보 요청 api
 
-Request
+Request Parameter
 {
   "os":String, // OS ["ios"|"android"|"window"|"mac"]
 }

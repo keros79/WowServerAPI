@@ -1,7 +1,7 @@
 GET /band_list/{userid}
 내가 가입한 밴드 목록 요청 api
 
-Request
+Request Parameter
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
 }

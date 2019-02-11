@@ -1,7 +1,7 @@
 GET /post/{post_no}
 지정된 게시글의 본문 요청 api
 
-Request
+Request Parameter
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
 }

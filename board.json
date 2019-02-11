@@ -2,7 +2,7 @@ GET /board/{band_no}
 1. {band_no}로 지정된 밴드의 게시글 목록 요청 api (지난 목록 혹은 최근 목록 옵션)
 2. {band_no}가 없으면 공개밴드의 최신글 목록 요청
 
-Request
+Request Parameter
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
   "date":Date, // 지정 날짜
