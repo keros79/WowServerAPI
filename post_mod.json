@@ -8,10 +8,25 @@ Request
   "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
   "title":String, // 이름
   "body":String, // 본문 내용 HTML 형식
-  "attach":StringArray[ // (optional) 첨부파일명 ("xxx.jpg, xxx.zip...")
-    String,
-    String
-    ...
+  "attach_image":StringArray // (optional) 첨부 이미지 파일주소
+  [ 
+    String,String,...
+  ],
+  "attach_movie":StringArray // (optional) 첨부 동영상 파일주소
+  [ 
+    String,String,...
+  ],
+  "attach_file":StringArray // (optional) 첨부 파일 파일주소
+  [ 
+    String,String,...
+  ],
+  "attach_vote":ObjectArray // (optional) 투표 정보
+  [ 
+    {
+      "vote_no":Integer,
+      "title":String, // 제목
+      "url":String, // 투표 링크 url
+    }
   ],
 }
 

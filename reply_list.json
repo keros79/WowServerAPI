@@ -23,6 +23,19 @@ Response
       "date":Date, // 작성 날짜 (Date 타입)
       "reply_no":Integer, // 댓글 번호
       "content":String, // 댓글 내용 텍스트 형식
+      "attach_image":StringArray // (optional) 첨부 이미지 파일주소
+      [ 
+        String,String,...
+      ],
+      "attach_movie":StringArray // (optional) 첨부 동영상 파일주소
+      [ 
+        String,String,...
+      ],
+      "attach_file":StringArray // (optional) 첨부 파일 파일주소
+      [ 
+        String,String,...
+      ],
+      "emoticon":String // (optional) 이모티콘
     },
   ]
 }
