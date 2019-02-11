@@ -8,7 +8,7 @@ Request Parameter
 
 Response
 {
-  "ver":String, // rest api 버전 ("2.0")
+  "api_ver":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지 (error 이면 아래 필드는 다 없음)
   "band_no":Integer, // 밴드 번호
   "band_admin":String, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)

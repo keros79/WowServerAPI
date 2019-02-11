@@ -11,7 +11,7 @@ Request Parameter
 
 Response
 {
-  "ver":String, // rest api 버전 ("2.0")
+  "api_ver":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
   "reply":ObjectArray // (optional) 댓글 리스트
   [

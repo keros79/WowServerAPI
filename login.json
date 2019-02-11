@@ -14,7 +14,7 @@ Request
 
 Response
 {
-  "ver":String, // rest api 버전("2.0")
+  "api_ver":String, // rest api 버전 ("1.0")
   "access_token":String, // (optional) 로그인 성공 시 토큰값
   "error":String, // (optional) 에러 메시지
 }
