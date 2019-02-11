@@ -1,0 +1,20 @@
+POST /login
+로그인 api
+
+Request
+{
+  "locale":String, // 언어 [ko|en|jp|zh...]
+  "id":String, // 사용자 아이디
+  "password":String, // 사용자 패스워드 (Encrypted)
+  "os":String, // OS ["ios"|"android"|"window"|"mac"]
+  "app_id":String, // 앱 아이디 혹은 패키지명
+  "push_type":String, // (optional) 푸쉬 종류 ["dev"|"release"]
+  "push_key":String, // (optional) 푸쉬 키
+}
+
+Response
+{
+  "ver":String, // rest api 버전("2.0")
+  "access_token":String, // (optional) 로그인 성공 시 토큰값
+  "error":String, // (optional) 에러 메시지
+}

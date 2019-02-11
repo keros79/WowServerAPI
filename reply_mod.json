@@ -1,0 +1,15 @@
+POST /reply_mod/{reply_no}
+댓글 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
+
+Request
+{
+  "locale":String, // 언어 [ko|en|jp|zh...]
+  "date":Date, // 수정 날짜 (Date 타입)
+  "content":String, // 댓글 내용 텍스트 형식
+}
+
+Response
+{
+  "ver":String, // rest api 버전("2.0")
+  "error":String, // (optional) 에러 메시지
+}

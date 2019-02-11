@@ -1,0 +1,19 @@
+POST /band_new
+새 밴드 만들기 api
+
+Request
+{
+  "locale":String, // 언어 [ko|en|jp|zh...]
+  "band_admin":String, // 밴드 어드민 아이디
+  "band_type":String, // 밴드 공개여부 ["open"|"closed"]
+  "date":Date, // 생성 날짜
+  "name":String, // 이름
+  "desc":String, // (optional) 부가 설명
+  "img":String, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{band_no}.jpg")
+}
+
+Response
+{
+  "ver":String, // rest api 버전("2.0")
+  "error":String, // (optional) 에러 메시지
+}

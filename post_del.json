@@ -1,0 +1,13 @@
+POST /post_del/{post_no}
+글 지우기 api (권한은 클라이언트에서 우선 자체 필터링)
+
+Request
+{
+  "locale":String, // 언어 [ko|en|jp|zh...]
+}
+
+Response
+{
+  "ver":String, // rest api 버전("2.0")
+  "error":String, // (optional) 에러 메시지
+}

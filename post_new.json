@@ -1,0 +1,27 @@
+POST /post_new
+새 글 작성하기 api
+
+Request
+{
+  "locale":String, // 언어 [ko|en|jp|zh...]
+  "owner_id":String, // 작성자 아이디
+  "owner_lev":String, // 작성자의 밴드 계급 ["admin"|"basic"]
+  "owner_name":String, // 작성자 이름
+  "owner_msg":String, // (optional) 작성자 상태 메시지
+  "owner_img":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
+  "date":Date, // 작성 날짜 (Date 타입)
+  "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
+  "title":String, // 이름
+  "body":String, // 본문 내용 HTML 형식
+  "attach":StringArray[ // (optional) 첨부파일명 ("xxx.jpg, xxx.zip...")
+    String,
+    String
+    ...
+  ],
+}
+
+Response
+{
+  "ver":String, // rest api 버전("2.0")
+  "error":String, // (optional) 에러 메시지
+}

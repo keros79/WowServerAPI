@@ -1,0 +1,14 @@
+GET /last_modified
+서버 변경 사항 체크 api (룰, 앱 버전...)
+
+Request
+{
+  "locale":String, // 언어 [ko|en|jp|zh...]
+}
+
+Response
+{
+  "ver":String, // rest api 버전 ("2.0")
+  "date":Date, // (optional) 서버 최종 변경 시간 (클라이언트에 저장된 시간과 비교)
+  "error":String, // (optional) 에러 메시지
+}
