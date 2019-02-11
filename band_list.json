@@ -13,7 +13,7 @@ Response
   "band":ObjectArray // (optional) 성공 시
   [ 
     {
-      "band_no":String, // 밴드 넘버
+      "band_no":Integer, // 밴드 번호
       "band_admin":String, // 이 밴드의 어드민 아이디
       "name":String, // 이름
       "desc":String, // (optional) 부가 설명

@@ -5,9 +5,9 @@ GET /board/{band_no}
 Request Parameter
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
-  "date":Date, // 지정 날짜
+  "date":Date, // (optional) 지정 날짜 (date가 없으면 현재 시간으로 지정됨)
   "method":String, // 이전 글 or 이후 글 ["prev"|"lastest"]
-  "max":Integer, // 최대 요청 갯수
+  "max":Integer, // (optional) 최대 요청 갯수 (default max : 10)
 }
 
 Response
