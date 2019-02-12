@@ -8,6 +8,7 @@ Request
   "band_type":String, // 밴드 공개여부 ["open"|"closed"]
   "date":Date, // 생성 날짜
   "name":String, // 이름
+  "category":String, // 카테고리
   "desc":String, // (optional) 부가 설명
   "img":String, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{bandNo}.jpg")
 }
