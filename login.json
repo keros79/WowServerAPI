@@ -4,8 +4,6 @@ POST /login
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
-  "id":String, // 사용자 아이디
-  "password":String, // 사용자 패스워드 (Encrypted)
   "os":String, // OS ["ios"|"android"|"window"|"mac"]
   "appId":String, // 앱 아이디 혹은 패키지명
   "pushType":String, // (optional) 푸쉬 종류 ["dev"|"release"]
