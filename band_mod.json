@@ -1,4 +1,4 @@
-POST /band_mod/{band_no}
+POST /band_mod/{bandNo}
 밴드 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
@@ -7,11 +7,11 @@ Request
   "name":String, // 밴드 이름
   "type":String, // (optional) 밴드 공개여부 ["open"|"closed"]
   "desc":String, // (optional) 밴드 부가 설명
-  "img":String, // (optional) 밴드 대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{band_no}.jpg")
+  "img":String, // (optional) 밴드 대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{bandNo}.jpg")
 }
 
 Response
 {
-  "api_ver":String, // rest api 버전 ("1.0")
+  "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
 }

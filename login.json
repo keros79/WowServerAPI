@@ -7,15 +7,15 @@ Request
   "id":String, // 사용자 아이디
   "password":String, // 사용자 패스워드 (Encrypted)
   "os":String, // OS ["ios"|"android"|"window"|"mac"]
-  "app_id":String, // 앱 아이디 혹은 패키지명
-  "push_type":String, // (optional) 푸쉬 종류 ["dev"|"release"]
-  "push_key":String, // (optional) 푸쉬 키
+  "appId":String, // 앱 아이디 혹은 패키지명
+  "pushType":String, // (optional) 푸쉬 종류 ["dev"|"release"]
+  "pushKey":String, // (optional) 푸쉬 키
 }
 
 Response
 {
-  "api_ver":String, // rest api 버전 ("1.0")
-  "session_id":String, // (optional) 로그인 성공 시 토큰값
-  "access_token":String, // (optional) 로그인 성공 시 토큰값
+  "apiVer":String, // rest api 버전 ("1.0")
+  "sessionId":String, // (optional) 로그인 성공 시 토큰값
+  "accessToken":String, // (optional) 로그인 성공 시 토큰값
   "error":String, // (optional) 에러 메시지
 }

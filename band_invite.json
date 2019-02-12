@@ -1,10 +1,10 @@
-POST /band_invite/{band_no}
+POST /band_invite/{bandNo}
 밴드 초대하기 api (초대 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
-  "user_id":StringArray // 초대할 사용자 아이디 리스트
+  "userId":StringArray // 초대할 사용자 아이디 리스트
   [
     String, String...
   ],
@@ -13,6 +13,6 @@ Request
 
 Response
 {
-  "api_ver":String, // rest api 버전 ("1.0")
+  "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
 }

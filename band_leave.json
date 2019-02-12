@@ -1,14 +1,14 @@
-POST /band_leave/{band_no}
+POST /band_leave/{bandNo}
 가입한 밴드에서 탈퇴하기 api
 
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
-  "user_id":String, // 사용자 아이디
+  "userId":String, // 사용자 아이디
 }
 
 Response
 {
-  "api_ver":String, // rest api 버전 ("1.0")
+  "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
 }

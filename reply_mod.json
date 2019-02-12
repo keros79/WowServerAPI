@@ -4,18 +4,18 @@ POST /reply_mod/{reply_no}
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
-  "owner_id":String, // 작성자 아이디
+  "ownerId":String, // 작성자 아이디
   "date":Date, // 수정 날짜 (Date 타입)
   "content":String, // 댓글 내용 텍스트 형식
-  "attach_image":StringArray // (optional) 첨부 이미지 파일주소
+  "attachImage":StringArray // (optional) 첨부 이미지 파일주소
   [ 
     String,String,...
   ],
-  "attach_movie":StringArray // (optional) 첨부 동영상 파일주소
+  "attachMovie":StringArray // (optional) 첨부 동영상 파일주소
   [ 
     String,String,...
   ],
-  "attach_file":StringArray // (optional) 첨부 파일 파일주소
+  "attachFile":StringArray // (optional) 첨부 파일 파일주소
   [ 
     String,String,...
   ],
@@ -24,6 +24,6 @@ Request
 
 Response
 {
-  "api_ver":String, // rest api 버전 ("1.0")
+  "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
 }

@@ -1,4 +1,4 @@
-POST /post_del/{post_no}
+POST /post_del/{postNo}
 글 지우기 api (권한은 클라이언트에서 우선 자체 필터링)
 
 Request
@@ -8,6 +8,6 @@ Request
 
 Response
 {
-  "api_ver":String, // rest api 버전 ("1.0")
+  "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
 }

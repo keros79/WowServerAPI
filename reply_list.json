@@ -1,4 +1,4 @@
-GET /reply_list/{post_no}
+GET /reply_list/{postNo}
 지정된 게시글의 댓글 리스트 요청 api
 
 Request Parameter
@@ -11,27 +11,27 @@ Request Parameter
 
 Response
 {
-  "api_ver":String, // rest api 버전 ("1.0")
+  "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
   "reply":ObjectArray // (optional) 댓글 리스트
   [
     {
-      "owner_id":String, // 작성자 아이디
-      "owner_name":String, // 작성자 이름
-      "owner_msg":String, // (optional) 작성자 상태 메시지
-      "owner_img":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{user_id}.jpg")
+      "ownerId":String, // 작성자 아이디
+      "ownerName":String, // 작성자 이름
+      "ownerMsg":String, // (optional) 작성자 상태 메시지
+      "ownerImg":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
       "date":Date, // 작성 날짜 (Date 타입)
       "reply_no":Integer, // 댓글 번호
       "content":String, // 댓글 내용 텍스트 형식
-      "attach_image":StringArray // (optional) 첨부 이미지 파일주소
+      "attachImage":StringArray // (optional) 첨부 이미지 파일주소
       [ 
         String,String,...
       ],
-      "attach_movie":StringArray // (optional) 첨부 동영상 파일주소
+      "attachMovie":StringArray // (optional) 첨부 동영상 파일주소
       [ 
         String,String,...
       ],
-      "attach_file":StringArray // (optional) 첨부 파일 파일주소
+      "attachFile":StringArray // (optional) 첨부 파일 파일주소
       [ 
         String,String,...
       ],

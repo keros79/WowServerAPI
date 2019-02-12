@@ -1,4 +1,4 @@
-POST /post_mod/{post_no}
+POST /post_mod/{postNo}
 글 수정 api (수정 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
@@ -8,22 +8,22 @@ Request
   "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
   "title":String, // 이름
   "body":String, // 본문 내용 HTML 형식
-  "attach_image":StringArray // (optional) 첨부 이미지 파일주소
+  "attachImage":StringArray // (optional) 첨부 이미지 파일주소
   [ 
     String,String,...
   ],
-  "attach_movie":StringArray // (optional) 첨부 동영상 파일주소
+  "attachMovie":StringArray // (optional) 첨부 동영상 파일주소
   [ 
     String,String,...
   ],
-  "attach_file":StringArray // (optional) 첨부 파일 파일주소
+  "attachFile":StringArray // (optional) 첨부 파일 파일주소
   [ 
     String,String,...
   ],
-  "attach_vote":ObjectArray // (optional) 투표 정보
+  "attachVote":ObjectArray // (optional) 투표 정보
   [ 
     {
-      "vote_no":Integer,
+      "voteNo":Integer,
       "title":String, // 제목
       "url":String, // 투표 링크 url
     }
@@ -32,6 +32,6 @@ Request
 
 Response
 {
-  "api_ver":String, // rest api 버전 ("1.0")
+  "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
 }
