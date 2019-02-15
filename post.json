@@ -4,6 +4,7 @@ GET /post/{postNo}
 Request Parameter
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
+  "withoutBody":Boolean, // (optional) 본문 포함 여부 (default는 본문 포함임)
 }
 
 Response
@@ -20,26 +21,41 @@ Response
   "date":Date, // 작성 날짜 (Date 타입)
   "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
   "title":String, // 이름
-  "body":String, // 본문 내용 HTML 형식
-  "attachImage":StringArray // (optional) 첨부 이미지 파일주소
-  [ 
-    String,String,...
-  ],
-  "attachMovie":StringArray // (optional) 첨부 동영상 파일주소
-  [ 
-    String,String,...
-  ],
-  "attachFile":StringArray // (optional) 첨부 파일 파일주소
-  [ 
-    String,String,...
-  ],
-  "attachVote":ObjectArray // (optional) 투표 정보
-  [ 
-    {
+  "body":ObjectArray // 본문 내용
+  [
+    { // (optional) 텍스트
+      "type":"text", 
+      "text":String, // 텍스트 내용 HTML (속성 포함)
+    },
+    { // (optional) 이미지
+      "type":"image", 
+      "name":String, // 이미지 파일명 
+      "url":String, // 이미지 URL (ex "http://xxxxx/image/{postNo}/{filename}")
+    },
+    { // (optional) 동영상
+      "type":"movie", 
+      "name":String, // 동영상 파일명 
+      "url":String, // 동영상 URL (ex "http://xxxxx/vod/{postNo}/{filename}")
+    },
+    { // (optional) 파일
+      "type":"file", 
+      "name":String, // 파일명 
+      "url":String, // 파일 URL (ex "http://xxxxx/file/{postNo}/{filename}")
+    },
+    { // (optional) 이모티콘
+      "type":"emoji",
+      "emoji":String, // 이모티콘
+    },
+    { // (optional) 투표
+      "type":"vote", 
       "voteNo":Integer,
       "title":String, // 제목
+      "content":ObjectArray // 투표 내용
+      [
+        ....
+      ], 
       "url":String, // 투표 링크 url
-    }
+    },
   ],
   "replyCount":Integer, // (optional) 댓글 수 (0보다 클 경우)
   "readCount":Integer, // (optional) 읽은 사람 수(0보다 클 경우)

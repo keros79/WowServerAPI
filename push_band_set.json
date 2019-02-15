@@ -1,0 +1,15 @@
+POST /push_band_set/{BandNo}
+푸쉬 설정 api
+
+Request
+{
+  "sessionId":String, // 내 세션 아이디
+  "type":String, // 종류 ["post"|"reply"]
+  "enable":Boolean, // true or false
+}
+
+Response
+{
+  "apiVer":String, // rest api 버전 ("1.0")
+  "error":String, // (optional) 에러 메시지
+}

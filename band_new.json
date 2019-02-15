@@ -6,7 +6,6 @@ Request
   "locale":String, // 언어 [ko|en|jp|zh...]
   "bandAdmin":String, // 밴드 어드민 아이디
   "band_type":String, // 밴드 공개여부 ["open"|"closed"]
-  "date":Date, // 생성 날짜
   "name":String, // 이름
   "category":String, // 카테고리
   "desc":String, // (optional) 부가 설명

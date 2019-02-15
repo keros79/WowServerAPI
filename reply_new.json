@@ -8,7 +8,6 @@ Request
   "ownerName":String, // 작성자 이름
   "ownerMsg":String, // (optional) 작성자 상태 메시지
   "ownerImg":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
-  "date":Date, // 작성 날짜 (Date 타입)
   "content":String, // 댓글 내용 텍스트 형식
   "attachImage":StringArray // (optional) 첨부 이미지 파일주소
   [ 

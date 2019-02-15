@@ -1,0 +1,15 @@
+POST /band_invite_answer/{bandNo}
+밴드 초대 응답 api
+
+Request
+{
+  "userId":String, // 내 아이디
+  "answer":String, // 응답 ["Yes"|"No"]
+  "message":String, // 응답 메시지
+}
+
+Response
+{
+  "apiVer":String, // rest api 버전 ("1.0")
+  "error":String, // (optional) 에러 메시지
+}

@@ -1,0 +1,15 @@
+POST /band_register/{bandNo}
+밴드 가입 신청 수락 api (for 어드민)
+
+Request
+{
+  "userId":String, // 내 아이디
+  "inviteUserId":String, // 상대 아이디
+  "register":Boolean, // 가입 여부
+}
+
+Response
+{
+  "apiVer":String, // rest api 버전 ("1.0")
+  "error":String, // (optional) 에러 메시지
+}

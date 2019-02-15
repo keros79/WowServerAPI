@@ -27,28 +27,61 @@ Response
       "postNo":Integer, // 게시글 번호
       "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
       "title":String, // 이름
-      "body":String, // 본문 내용 HTML 형식 (라인 수 제한된)
-      "hasMore":Boolean, // (optional) 라인 수가 짤릴 경우 더보기 표시 여부
-      "attachImage":StringArray // (optional) 첨부 이미지 파일주소
-      [ 
-        String,String,...
+      "body":ObjectArray // 본문 내용
+      [
+        "type":String, // ["text"|"image"|"movie"|"emoticon"|vote"|"tag"]
+        "content":ObjectArray
+        [
+          { // (optional) 텍스트
+            "text":String, // 텍스트 내용 HTML (속성 포함)
+          },
+          { // (optional) 이미지
+            "url":String, // 이미지 URL
+          },
+          { // (optional) 동영상
+            "url":String, // 동영상 URL
+          },
+          { // (optional) 이모티콘
+            "userId":String, // 사용자 아이디
+            "userImage":String, // 사용자 사진 url
+            "emoji":String, // 이모티콘
+          },
+          { // (optional) 투표
+            "voteNo":Integer,
+            "title":String, // 제목
+            "url":String, // 투표 링크 url
+          },
+          { // (optional) 태그
+            "tag":StringArray, // 태그
+          },
+        ]
       ],
-      "attachMovie":StringArray // (optional) 첨부 동영상 파일주소
-      [ 
-        String,String,...
-      ],
-      "attachFile":StringArray // (optional) 첨부 파일 파일주소
-      [ 
-        String,String,...
-      ],
-      "attachVote":ObjectArray // (optional) 투표 정보
-      [ 
+      "reply":ObjectArray
+      [
         {
-          "voteNo":Integer,
-          "title":String, // 제목
-          "url":String, // 투표 링크 url
-        }
+          "ownerId":String, // 작성자 아이디
+          "ownerName":String, // 작성자 이름
+          "ownerMsg":String, // (optional) 작성자 상태 메시지
+          "ownerImg":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
+          "date":Date, // 작성 날짜 (Date 타입)
+          "reply_no":Integer, // 댓글 번호
+          "content":String, // 댓글 내용 텍스트 형식
+          "attachImage":StringArray // (optional) 첨부 이미지 파일주소
+          [ 
+            String,String,...
+          ],
+          "attachMovie":StringArray // (optional) 첨부 동영상 파일주소
+          [ 
+            String,String,...
+          ],
+          "attachFile":StringArray // (optional) 첨부 파일 파일주소
+          [ 
+            String,String,...
+          ],
+          "emoticon":String // (optional) 이모티콘
+        },
       ],
+      "emoticonCount":Integer, // (optional) 댓글 수 (0보다 클 경우)
       "replyCount":Integer, // (optional) 댓글 수 (0보다 클 경우)
       "readCount":Integer, // (optional) 읽은 사람 수(0보다 클 경우)
     },

@@ -7,26 +7,34 @@ Request
   "date":Date, // 수정 날짜 (Date 타입)
   "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
   "title":String, // 이름
-  "body":String, // 본문 내용 HTML 형식
-  "attachImage":StringArray // (optional) 첨부 이미지 파일주소
-  [ 
-    String,String,...
-  ],
-  "attachMovie":StringArray // (optional) 첨부 동영상 파일주소
-  [ 
-    String,String,...
-  ],
-  "attachFile":StringArray // (optional) 첨부 파일 파일주소
-  [ 
-    String,String,...
-  ],
-  "attachVote":ObjectArray // (optional) 투표 정보
-  [ 
-    {
-      "voteNo":Integer,
-      "title":String, // 제목
-      "url":String, // 투표 링크 url
-    }
+  "body":ObjectArray // 본문 내용
+  [
+    "type":String, // ["text"|"image"|"movie"|"emoticon"|vote"|"tag"]
+    "content":ObjectArray
+    [
+      { // (optional) 텍스트
+        "text":String, // 텍스트 내용 HTML (속성 포함)
+      },
+      { // (optional) 이미지
+        "url":String, // 이미지 URL
+      },
+      { // (optional) 동영상
+        "url":String, // 동영상 URL
+      },
+      { // (optional) 이모티콘
+        "userId":String, // 사용자 아이디
+        "userImage":String, // 사용자 사진 url
+        "emoji":String, // 이모티콘
+      },
+      { // (optional) 투표
+        "voteNo":Integer,
+        "title":String, // 제목
+        "url":String, // 투표 링크 url
+      },
+      { // (optional) 태그
+        "tag":StringArray, // 태그
+      },
+    ]
   ],
 }
 

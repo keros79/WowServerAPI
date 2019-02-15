@@ -4,10 +4,6 @@ POST /band_invite/{bandNo}
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
-  "userId":StringArray // 초대할 사용자 아이디 리스트
-  [
-    String, String...
-  ],
   "msg":String, // 초대메시지
 }
 
