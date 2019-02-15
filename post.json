@@ -42,9 +42,9 @@ Response
       "name":String, // 파일명 
       "url":String, // 파일 URL (ex "http://xxxxx/file/{postNo}/{filename}")
     },
-    { // (optional) 이모티콘
-      "type":"emoji",
-      "emoji":String, // 이모티콘
+    { // (optional) 스티커
+      "type":"sticker",
+      "sticker":String, // 스티커
     },
     { // (optional) 투표
       "type":"vote", 

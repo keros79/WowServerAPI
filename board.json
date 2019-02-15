@@ -56,7 +56,7 @@ Response
           },
         ]
       ],
-      "reply":ObjectArray
+      "reply":ObjectArray // 게시글의 최근 댓글 2개까지
       [
         {
           "ownerId":String, // 작성자 아이디
