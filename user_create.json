@@ -1,0 +1,18 @@
+POST /user_create
+사용자 추가 api
+
+Request
+{
+  "locale":String, // 언어 [ko|en|jp|zh...]
+  "userId":String, // 사용자 아이다
+  "password":String, // 패스워드
+  "encryptMethod":String, // 패스워드 암호 방식 ["no"|"sha256"]
+  "statusMessage":String, // 상태 메시지
+  "profileImage":String, // 사용자 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
+}
+
+Response
+{
+  "apiVer":String, // rest api 버전 ("1.0")
+  "error":String, // (optional) 에러 메시지
+}

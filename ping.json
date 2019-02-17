@@ -1,0 +1,12 @@
+GET /ping
+
+Request Parameter
+{
+}
+
+Response
+{
+  "apiVer":String, // rest api 버전 ("1.0")
+  "error":String, // (optional) 에러 메시지 (error 이면 아래 필드는 다 없음)
+  "timestamp":Integer
+}
