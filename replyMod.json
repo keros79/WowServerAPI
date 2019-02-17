@@ -1,13 +1,11 @@
-POST /reply_new/{postNo}
-새 댓글 작성하기 api
+POST /replyMod/{reply_no}
+댓글 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
   "ownerId":String, // 작성자 아이디
-  "ownerName":String, // 작성자 이름
-  "ownerMsg":String, // (optional) 작성자 상태 메시지
-  "ownerImg":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
+  "date":Date, // 수정 날짜 (Date 타입)
   "content":String, // 댓글 내용 텍스트 형식
   "attach":ObjectArray
   [ 
@@ -41,7 +39,4 @@ Response
 {
   "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
-  "ownerId":String, // 작성자 아이디
-  "date":Date, // 작성 날짜 (Date 타입)
-  "content":String, // 댓글 내용 텍스트 형식
 }

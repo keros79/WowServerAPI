@@ -3,8 +3,7 @@ POST /logout
 
 Request 
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
-  "id":String, // 사용자 아이디
+  "userId":String, // 사용자 아이디
   "sessionId":String, // 세션 아이디
 }
 

@@ -1,4 +1,4 @@
-POST /push_set
+POST /pushSet
 푸쉬 설정 api
 
 Request

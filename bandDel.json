@@ -1,10 +1,9 @@
-POST /band_invite/{bandNo}
-밴드 초대하기 api (초대 권한은 클라이언트에서 우선 자체 필터링)
+POST /bandDel/{bandNo}
+밴드 없애기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
-  "msg":String, // 초대메시지
 }
 
 Response

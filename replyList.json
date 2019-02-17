@@ -1,4 +1,4 @@
-GET /reply_list/{postNo}
+GET /replyList/{postNo}
 지정된 게시글의 댓글 리스트 요청 api
 
 Request Parameter

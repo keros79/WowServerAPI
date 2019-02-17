@@ -1,9 +1,10 @@
-POST /band_mod/{bandNo}
-밴드 없애기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
+POST /bandLeave/{bandNo}
+가입한 밴드에서 탈퇴하기 api
 
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
+  "userId":String, // 사용자 아이디
 }
 
 Response

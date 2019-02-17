@@ -1,4 +1,4 @@
-POST /push_band_set/{BandNo}
+POST /pushBandSet/{BandNo}
 푸쉬 설정 api
 
 Request

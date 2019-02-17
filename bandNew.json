@@ -1,4 +1,4 @@
-POST /band_new
+POST /bandNew
 새 밴드 만들기 api
 
 Request

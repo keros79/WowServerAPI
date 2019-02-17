@@ -1,4 +1,4 @@
-GET /post_unread_count/{postNo}
+GET /postUnreadCount/{postNo}
 앱 버전 정보 요청 api
 
 Request Parameter
@@ -9,5 +9,5 @@ Response
 {
   "apiVer":String, // rest api 버전 ("1.0")
   "error":String, // (optional) 에러 메시지
-  "unread_count":Integer, // (optional) 안읽은 글 갯수
+  "unreadCount":Integer, // (optional) 안읽은 글 갯수
 }

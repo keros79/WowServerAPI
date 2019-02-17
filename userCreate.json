@@ -1,9 +1,8 @@
-POST /user_create
+POST /userCreate
 사용자 추가 api
 
 Request
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
   "userId":String, // 사용자 아이다
   "password":String, // 패스워드
   "encryptMethod":String, // 패스워드 암호 방식 ["no"|"sha256"]

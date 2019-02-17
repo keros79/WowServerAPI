@@ -1,4 +1,4 @@
-GET /band_list/{userid}
+GET /bandList/{userid}
 내가 가입한 밴드 목록 요청 api
 
 Request Parameter

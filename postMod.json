@@ -1,14 +1,14 @@
-POST /reply_mod/{reply_no}
-댓글 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
+POST /postMod/{postNo}
+글 수정 api (수정 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
 {
   "locale":String, // 언어 [ko|en|jp|zh...]
-  "ownerId":String, // 작성자 아이디
   "date":Date, // 수정 날짜 (Date 타입)
-  "content":String, // 댓글 내용 텍스트 형식
-  "attach":ObjectArray
-  [ 
+  "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
+  "title":String, // 이름
+  "body":ObjectArray // 본문 내용
+  [
     { // (optional) 텍스트
       "type":"text", 
       "text":String, // 텍스트 내용 HTML (속성 포함)
@@ -31,6 +31,16 @@ Request
     { // (optional) 스티커
       "type":"sticker",
       "sticker":String, // 스티커
+    },
+    { // (optional) 투표
+      "type":"vote", 
+      "voteNo":Integer,
+      "title":String, // 제목
+      "content":ObjectArray // 투표 내용
+      [
+        ....
+      ], 
+      "url":String, // 투표 링크 url
     },
   ],
 }

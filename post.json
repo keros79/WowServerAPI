@@ -18,7 +18,7 @@ Response
   "ownerMsg":String, // (optional) 작성자 상태 메시지
   "ownerImg":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
   "postNo":String, // 게시글 번호
-  "date":Date, // 작성 날짜 (Date 타입)
+  "timestamp":Date, // 작성 날짜 (Date 타입)
   "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
   "title":String, // 이름
   "body":ObjectArray // 본문 내용
