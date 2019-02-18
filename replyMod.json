@@ -5,7 +5,6 @@ Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
   "ownerId":string, // 작성자 아이디
-  "date":Date, // 수정 날짜 (Date 타입)
   "content":string, // 댓글 내용 텍스트 형식
   "attach":objectArray
   [ 

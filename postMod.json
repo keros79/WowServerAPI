@@ -4,7 +4,6 @@ POST /postMod/{postNo}
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "date":Date, // 수정 날짜 (Date 타입)
   "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
   "title":string, // 이름
   "body":objectArray // 본문 내용

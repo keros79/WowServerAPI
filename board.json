@@ -5,7 +5,7 @@ GET /board/{bandNo}
 Request Parameter
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "date":Date, // (optional) 지정 날짜 (date가 없으면 현재 시간으로 지정됨)
+  "timestamp":number, // (optional) 지정 시간 (UTC UNIX time)
   "method":string, // 이전 글 or 이후 글 ["prev"|"lastest"]
   "max":number, // (optional) 최대 요청 갯수 (default max : 10)
 }
@@ -23,7 +23,7 @@ Response
       "ownerName":string, // 작성자 이름
       "ownerMsg":string, // (optional) 작성자 상태 메시지
       "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
-      "date":Date, // 작성 날짜 (Date 타입)
+      "timestamp":number, // 작성 시간 (UTC UNIX time)
       "postNo":number, // 게시글 번호
       "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
       "title":string, // 이름
@@ -63,7 +63,7 @@ Response
           "ownerName":string, // 작성자 이름
           "ownerMsg":string, // (optional) 작성자 상태 메시지
           "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
-          "date":Date, // 작성 날짜 (Date 타입)
+          "timestamp":number, // 작성 시간 (UTC UNIX time)
           "reply_no":number, // 댓글 번호
           "content":string, // 댓글 내용 텍스트 형식
           "attachImage":stringArray // (optional) 첨부 이미지 파일주소
