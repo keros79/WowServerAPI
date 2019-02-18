@@ -1,4 +1,4 @@
-GET /board/{bandNo}
+GET /postList/{bandNo}
 1. {bandNo}로 지정된 밴드의 게시글 목록 요청 api (지난 목록 혹은 최근 목록 옵션)
 2. {bandNo}가 없으면 공개밴드의 최신글 목록 요청
 
@@ -14,11 +14,11 @@ Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
   "error":string, // (optional) 에러 메시지
-  "bandNo":number, // 밴드 넘버
   "bandAdmin":string, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
   "post":objectArray // (optional) 최근 순서
   [
     {
+      "bandNo":number, // 밴드 넘버
       "ownerId":string, // 작성자 아이디
       "ownerName":string, // 작성자 이름
       "ownerMsg":string, // (optional) 작성자 상태 메시지
