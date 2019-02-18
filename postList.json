@@ -43,7 +43,7 @@ Response
           },
           { // (optional) 스티커
             "type":"sticker",
-            "sticker":String, // 스티커
+            "sticker":string, // 스티커
           },
           { // (optional) 투표
             "voteNo":number,
@@ -67,18 +67,17 @@ Response
           "content":string, // 댓글 내용 텍스트 형식
           "attachImage":stringArray // (optional) 첨부 이미지 파일주소
           [ 
-            string,string,...
+            string
           ],
           "attachMovie":stringArray // (optional) 첨부 동영상 파일주소
           [ 
-            string,string,...
+            string
           ],
           "attachFile":stringArray // (optional) 첨부 파일 파일주소
           [ 
-            string,string,...
+            string
           ],
-          "emoticon":string // (optional) 이모티콘
-        },
+        }
       ],
       "emoticonCount":number, // (optional) 댓글 수 (0보다 클 경우)
       "replyCount":number, // (optional) 댓글 수 (0보다 클 경우)

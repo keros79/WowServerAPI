@@ -5,7 +5,7 @@ Request
 {
   "sessionId":string, // 내 세션 아이디
   "type":string, // 종류 ["post"|"reply"]
-  "enable":Boolean, // true or false
+  "enable":boolean, // true or false
 }
 
 Response
