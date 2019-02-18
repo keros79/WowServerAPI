@@ -41,10 +41,9 @@ Response
           { // (optional) 동영상
             "url":string, // 동영상 URL
           },
-          { // (optional) 이모티콘
-            "userId":string, // 사용자 아이디
-            "userImage":string, // 사용자 사진 url
-            "emoji":string, // 이모티콘
+          { // (optional) 스티커
+            "type":"sticker",
+            "sticker":String, // 스티커
           },
           { // (optional) 투표
             "voteNo":number,
