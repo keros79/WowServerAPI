@@ -3,12 +3,12 @@ POST /bandLeave/{bandNo}
 
 Request
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
-  "userId":String, // 사용자 아이디
+  "locale":string, // 언어 [ko|en|jp|zh...]
+  "userId":string, // 사용자 아이디
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
 }

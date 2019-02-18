@@ -3,12 +3,12 @@ GET /upgrade
 
 Request Parameter
 {
-  "os":String, // OS ["ios"|"android"|"window"|"mac"]
+  "os":string, // OS ["ios"|"android"|"window"|"mac"]
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "app_ver":String, // (optional) 서버에 등록된 앱 버전 정보 ("1.1")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "app_ver":string, // (optional) 서버에 등록된 앱 버전 정보 ("1.1")
+  "error":string, // (optional) 에러 메시지
 }

@@ -3,17 +3,17 @@ POST /login
 
 Request
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
-  "os":String, // OS ["ios"|"android"|"window"|"mac"]
-  "appId":String, // 앱 아이디 혹은 패키지명
-  "pushType":String, // (optional) 푸쉬 종류 ["dev"|"release"]
-  "pushKey":String, // (optional) 푸쉬 키
+  "locale":string, // 언어 [ko|en|jp|zh...]
+  "os":string, // OS ["ios"|"android"|"window"|"mac"]
+  "appId":string, // 앱 아이디 혹은 패키지명
+  "pushType":string, // (optional) 푸쉬 종류 ["dev"|"release"]
+  "pushKey":string, // (optional) 푸쉬 키
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "sessionId":String, // (optional) 로그인 성공 시 토큰값
-  "accessToken":String, // (optional) 로그인 성공 시 토큰값
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "sessionId":string, // (optional) 로그인 성공 시 토큰값
+  "accessToken":string, // (optional) 로그인 성공 시 토큰값
+  "error":string, // (optional) 에러 메시지
 }

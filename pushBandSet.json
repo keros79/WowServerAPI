@@ -3,13 +3,13 @@ POST /pushBandSet/{BandNo}
 
 Request
 {
-  "sessionId":String, // 내 세션 아이디
-  "type":String, // 종류 ["post"|"reply"]
+  "sessionId":string, // 내 세션 아이디
+  "type":string, // 종류 ["post"|"reply"]
   "enable":Boolean, // true or false
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
 }

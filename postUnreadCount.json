@@ -7,7 +7,7 @@ Request Parameter
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
-  "unreadCount":Integer, // (optional) 안읽은 글 갯수
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
+  "unreadCount":number, // (optional) 안읽은 글 갯수
 }

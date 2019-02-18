@@ -3,50 +3,50 @@ POST /postMod/{postNo}
 
 Request
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
+  "locale":string, // 언어 [ko|en|jp|zh...]
   "date":Date, // 수정 날짜 (Date 타입)
-  "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
-  "title":String, // 이름
-  "body":ObjectArray // 본문 내용
+  "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
+  "title":string, // 이름
+  "body":objectArray // 본문 내용
   [
     { // (optional) 텍스트
       "type":"text", 
-      "text":String, // 텍스트 내용 HTML (속성 포함)
+      "text":string, // 텍스트 내용 HTML (속성 포함)
     },
     { // (optional) 이미지
       "type":"image", 
-      "name":String, // 이미지 파일명 
-      "url":String, // 이미지 URL (ex "http://xxxxx/image/{postNo}/{filename}")
+      "name":string, // 이미지 파일명 
+      "url":string, // 이미지 URL (ex "http://xxxxx/image/{postNo}/{filename}")
     },
     { // (optional) 동영상
       "type":"movie", 
-      "name":String, // 동영상 파일명 
-      "url":String, // 동영상 URL (ex "http://xxxxx/vod/{postNo}/{filename}")
+      "name":string, // 동영상 파일명 
+      "url":string, // 동영상 URL (ex "http://xxxxx/vod/{postNo}/{filename}")
     },
     { // (optional) 파일
       "type":"file", 
-      "name":String, // 파일명 
-      "url":String, // 파일 URL (ex "http://xxxxx/file/{postNo}/{filename}")
+      "name":string, // 파일명 
+      "url":string, // 파일 URL (ex "http://xxxxx/file/{postNo}/{filename}")
     },
     { // (optional) 스티커
       "type":"sticker",
-      "sticker":String, // 스티커
+      "sticker":string, // 스티커
     },
     { // (optional) 투표
       "type":"vote", 
-      "voteNo":Integer,
-      "title":String, // 제목
-      "content":ObjectArray // 투표 내용
+      "voteNo":number,
+      "title":string, // 제목
+      "content":objectArray // 투표 내용
       [
         ....
       ], 
-      "url":String, // 투표 링크 url
+      "url":string, // 투표 링크 url
     },
   ],
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
 }

@@ -3,11 +3,11 @@ POST /bandDel/{bandNo}
 
 Request
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
+  "locale":string, // 언어 [ko|en|jp|zh...]
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
 }

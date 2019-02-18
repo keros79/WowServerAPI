@@ -3,12 +3,12 @@ POST /pushSet
 
 Request
 {
-  "sessionId":String, // 내 세션 아이디
+  "sessionId":string, // 내 세션 아이디
   "enable":Boolean, // true or false
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
 }

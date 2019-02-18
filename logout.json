@@ -3,12 +3,12 @@ POST /logout
 
 Request 
 {
-  "userId":String, // 사용자 아이디
-  "sessionId":String, // 세션 아이디
+  "userId":string, // 사용자 아이디
+  "sessionId":string, // 세션 아이디
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
 }

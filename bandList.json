@@ -3,22 +3,22 @@ GET /bandList/{userid}
 
 Request Parameter
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
+  "locale":string, // 언어 [ko|en|jp|zh...]
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
-  "band":ObjectArray // (optional) 성공 시
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
+  "band":objectArray // (optional) 성공 시
   [ 
     {
-      "bandNo":Integer, // 밴드 번호
-      "bandAdmin":String, // 이 밴드의 어드민 아이디
-      "name":String, // 이름
-      "category":String, // 카테고리
-      "desc":String, // (optional) 부가 설명
-      "img":String, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{bandNo}.jpg")
+      "bandNo":number, // 밴드 번호
+      "bandAdmin":string, // 이 밴드의 어드민 아이디
+      "name":string, // 이름
+      "category":string, // 카테고리
+      "desc":string, // (optional) 부가 설명
+      "img":string, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{bandNo}.jpg")
       "pushOff":boolean, // (optional) 밴드 푸쉬 알림 disable 설정 (true 이면 push 금지)
     },
   ],

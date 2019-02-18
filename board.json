@@ -4,86 +4,86 @@ GET /board/{bandNo}
 
 Request Parameter
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
+  "locale":string, // 언어 [ko|en|jp|zh...]
   "date":Date, // (optional) 지정 날짜 (date가 없으면 현재 시간으로 지정됨)
-  "method":String, // 이전 글 or 이후 글 ["prev"|"lastest"]
-  "max":Integer, // (optional) 최대 요청 갯수 (default max : 10)
+  "method":string, // 이전 글 or 이후 글 ["prev"|"lastest"]
+  "max":number, // (optional) 최대 요청 갯수 (default max : 10)
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
-  "bandNo":Integer, // 밴드 넘버
-  "bandAdmin":String, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
-  "post":ObjectArray // (optional) 최근 순서
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
+  "bandNo":number, // 밴드 넘버
+  "bandAdmin":string, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
+  "post":objectArray // (optional) 최근 순서
   [
     {
-      "ownerId":String, // 작성자 아이디
-      "ownerName":String, // 작성자 이름
-      "ownerMsg":String, // (optional) 작성자 상태 메시지
-      "ownerImg":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
+      "ownerId":string, // 작성자 아이디
+      "ownerName":string, // 작성자 이름
+      "ownerMsg":string, // (optional) 작성자 상태 메시지
+      "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
       "date":Date, // 작성 날짜 (Date 타입)
-      "postNo":Integer, // 게시글 번호
-      "type":String, // 게시글 타입 ["normal"|"notice"|"birth"]
-      "title":String, // 이름
-      "body":ObjectArray // 본문 내용
+      "postNo":number, // 게시글 번호
+      "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
+      "title":string, // 이름
+      "body":objectArray // 본문 내용
       [
-        "type":String, // ["text"|"image"|"movie"|"emoticon"|vote"|"tag"]
-        "content":ObjectArray
+        "type":string, // ["text"|"image"|"movie"|"emoticon"|vote"|"tag"]
+        "content":objectArray
         [
           { // (optional) 텍스트
-            "text":String, // 텍스트 내용 HTML (속성 포함)
+            "text":string, // 텍스트 내용 HTML (속성 포함)
           },
           { // (optional) 이미지
-            "url":String, // 이미지 URL
+            "url":string, // 이미지 URL
           },
           { // (optional) 동영상
-            "url":String, // 동영상 URL
+            "url":string, // 동영상 URL
           },
           { // (optional) 이모티콘
-            "userId":String, // 사용자 아이디
-            "userImage":String, // 사용자 사진 url
-            "emoji":String, // 이모티콘
+            "userId":string, // 사용자 아이디
+            "userImage":string, // 사용자 사진 url
+            "emoji":string, // 이모티콘
           },
           { // (optional) 투표
-            "voteNo":Integer,
-            "title":String, // 제목
-            "url":String, // 투표 링크 url
+            "voteNo":number,
+            "title":string, // 제목
+            "url":string, // 투표 링크 url
           },
           { // (optional) 태그
-            "tag":StringArray, // 태그
+            "tag":stringArray, // 태그
           },
         ]
       ],
-      "reply":ObjectArray // 게시글의 최근 댓글 2개까지
+      "reply":objectArray // 게시글의 최근 댓글 2개까지
       [
         {
-          "ownerId":String, // 작성자 아이디
-          "ownerName":String, // 작성자 이름
-          "ownerMsg":String, // (optional) 작성자 상태 메시지
-          "ownerImg":String, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
+          "ownerId":string, // 작성자 아이디
+          "ownerName":string, // 작성자 이름
+          "ownerMsg":string, // (optional) 작성자 상태 메시지
+          "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
           "date":Date, // 작성 날짜 (Date 타입)
-          "reply_no":Integer, // 댓글 번호
-          "content":String, // 댓글 내용 텍스트 형식
-          "attachImage":StringArray // (optional) 첨부 이미지 파일주소
+          "reply_no":number, // 댓글 번호
+          "content":string, // 댓글 내용 텍스트 형식
+          "attachImage":stringArray // (optional) 첨부 이미지 파일주소
           [ 
-            String,String,...
+            string,string,...
           ],
-          "attachMovie":StringArray // (optional) 첨부 동영상 파일주소
+          "attachMovie":stringArray // (optional) 첨부 동영상 파일주소
           [ 
-            String,String,...
+            string,string,...
           ],
-          "attachFile":StringArray // (optional) 첨부 파일 파일주소
+          "attachFile":stringArray // (optional) 첨부 파일 파일주소
           [ 
-            String,String,...
+            string,string,...
           ],
-          "emoticon":String // (optional) 이모티콘
+          "emoticon":string // (optional) 이모티콘
         },
       ],
-      "emoticonCount":Integer, // (optional) 댓글 수 (0보다 클 경우)
-      "replyCount":Integer, // (optional) 댓글 수 (0보다 클 경우)
-      "readCount":Integer, // (optional) 읽은 사람 수(0보다 클 경우)
+      "emoticonCount":number, // (optional) 댓글 수 (0보다 클 경우)
+      "replyCount":number, // (optional) 댓글 수 (0보다 클 경우)
+      "readCount":number, // (optional) 읽은 사람 수(0보다 클 경우)
     },
   ],
 }

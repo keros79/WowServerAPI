@@ -3,17 +3,17 @@ POST /bandNew
 
 Request
 {
-  "locale":String, // 언어 [ko|en|jp|zh...]
-  "bandAdmin":String, // 밴드 어드민 아이디
-  "band_type":String, // 밴드 공개여부 ["open"|"closed"]
-  "name":String, // 이름
-  "category":String, // 카테고리
-  "desc":String, // (optional) 부가 설명
-  "img":String, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{bandNo}.jpg")
+  "locale":string, // 언어 [ko|en|jp|zh...]
+  "bandAdmin":string, // 밴드 어드민 아이디
+  "band_type":string, // 밴드 공개여부 ["open"|"closed"]
+  "name":string, // 이름
+  "category":string, // 카테고리
+  "desc":string, // (optional) 부가 설명
+  "img":string, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{bandNo}.jpg")
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
 }

@@ -3,13 +3,13 @@ POST /bandInviteAnswer/{bandNo}
 
 Request
 {
-  "userId":String, // 내 아이디
-  "answer":String, // 응답 ["Yes"|"No"]
-  "message":String, // 응답 메시지
+  "userId":string, // 내 아이디
+  "answer":string, // 응답 ["Yes"|"No"]
+  "message":string, // 응답 메시지
 }
 
 Response
 {
-  "apiVer":String, // rest api 버전 ("1.0")
-  "error":String, // (optional) 에러 메시지
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
 }
