@@ -1,0 +1,15 @@
+POST /replyFileUpload/{postNo}
+게시글 댓글 파일 업로드 api
+
+Request
+{
+  "type":string, // ["image", "video", "file"]
+  "name":string, // 파일명
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
+  "url":string, // (optional) 파일 경로
+}

@@ -1,0 +1,14 @@
+POST /userProfileUpload/{userId}
+사용자 프로파일 이미지 업로드 api
+
+Request
+{
+  "type":string, // 이미지 타입 ["jpg", "png", "bmp"]
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "url":string, // (optional) 에러 메시지
+  "error":string, // (optional) 에러 메시지
+}

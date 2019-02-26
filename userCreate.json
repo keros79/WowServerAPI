@@ -3,7 +3,7 @@ POST /userCreate
 
 Request
 {
-  "userId":string, // 사용자 아이다
+  "userId":string, // 사용자 아이디
   "password":string, // 패스워드
   "encryptMethod":string, // 패스워드 암호 방식 ["no"|"sha256"]
   "statusMessage":string, // 상태 메시지

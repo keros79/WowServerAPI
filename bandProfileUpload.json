@@ -1,0 +1,14 @@
+POST /bandFileUpload/{bandNo}
+밴드 프로파일 이미지 업로드 api
+
+Request
+{
+  "type":string, // 이미지 타입 ["jpg", "png", "bmp"]
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "error":string, // (optional) 에러 메시지
+  "url":string, // (optional) 파일 경로
+}
