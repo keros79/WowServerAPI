@@ -33,7 +33,7 @@ Response
       "url":string, // 이미지 URL (ex "http://xxxxx/image/{postNo}/{filename}")
     },
     { // (optional) 동영상
-      "type":"movie", 
+      "type":"video", 
       "name":string, // 동영상 파일명 
       "url":string, // 동영상 URL (ex "http://xxxxx/vod/{postNo}/{filename}")
     },

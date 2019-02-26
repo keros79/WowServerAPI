@@ -18,8 +18,11 @@ Response
       "name":string, // 이름
       "category":string, // 카테고리
       "desc":string, // (optional) 부가 설명
-      "img":string, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{bandNo}.jpg")
-      "pushOff":boolean, // (optional) 밴드 푸쉬 알림 disable 설정 (true 이면 push 금지)
+      "img":string, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/bandProfile/{bandNo}.jpg")
+      "pushOff":stringArray  // (optional) 밴드 푸쉬 알림 disable 설정한 세션아이디 리스트
+      [
+        string,
+      ], 
     },
   ],
 }

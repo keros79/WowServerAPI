@@ -29,29 +29,41 @@ Response
       "title":string, // 이름
       "body":objectArray // 본문 내용
       [
-        "type":string, // ["text"|"image"|"movie"|"emoticon"|vote"|"tag"]
-        "content":objectArray
+        "type":string, // ["text"|"image"|"movie"|"emoticon"|vote"|"tag"|"geo"]
+        "content":objectArray // 텍스트, 스티커, 투표 각 1개, 이미지+동영상는 3개까지
         [
           { // (optional) 텍스트
+            "type":"text", 
             "text":string, // 텍스트 내용 HTML (속성 포함)
           },
           { // (optional) 이미지
-            "url":string, // 이미지 URL
+            "type":"image", 
+            "name":string, // 이미지 파일명 
+            "url":string, // 이미지 URL (ex "http://xxxxx/image/{postNo}/{filename}")
           },
           { // (optional) 동영상
-            "url":string, // 동영상 URL
+            "type":"video", 
+            "name":string, // 동영상 파일명 
+            "url":string, // 동영상 URL (ex "http://xxxxx/vod/{postNo}/{filename}")
+          },
+          { // (optional) 파일
+            "type":"file", 
+            "name":string, // 파일명 
+            "url":string, // 파일 URL (ex "http://xxxxx/file/{postNo}/{filename}")
           },
           { // (optional) 스티커
             "type":"sticker",
             "sticker":string, // 스티커
           },
           { // (optional) 투표
+            "type":"vote", 
             "voteNo":number,
             "title":string, // 제목
+            "content":objectArray // 투표 내용
+            [
+              ....
+            ], 
             "url":string, // 투표 링크 url
-          },
-          { // (optional) 태그
-            "tag":stringArray, // 태그
           },
         ]
       ],

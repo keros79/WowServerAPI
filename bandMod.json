@@ -8,7 +8,7 @@ Request
   "category":string, // 카테고리
   "type":string, // (optional) 밴드 공개여부 ["open"|"closed"]
   "desc":string, // (optional) 밴드 부가 설명
-  "img":string, // (optional) 밴드 대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/band/{bandNo}.jpg")
+  "img":string, // (optional) 밴드 대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/bandProfile/{bandNo}.jpg")
 }
 
 Response
