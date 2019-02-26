@@ -1,5 +1,5 @@
-POST /bandDel/{bandNo}
-밴드 없애기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
+POST /postDelete/{postNo}
+글 지우기 api (권한은 클라이언트에서 우선 자체 필터링)
 
 Request
 {

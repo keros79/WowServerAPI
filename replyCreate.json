@@ -1,4 +1,4 @@
-POST /replyNew/{postNo}
+POST /replyCreate/{postNo}
 새 댓글 작성하기 api
 
 Request

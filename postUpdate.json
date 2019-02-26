@@ -1,15 +1,9 @@
-POST /postNew
-새 글 작성하기 api
+POST /postUpdate/{postNo}
+글 수정 api (수정 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "bandNo":number, // 밴드 번호
-  "ownerId":string, // 작성자 아이디
-  "ownerLevel":string, // 작성자의 밴드 계급 ["admin"|"basic"]
-  "ownerName":string, // 작성자 이름
-  "ownerMsg":string, // (optional) 작성자 상태 메시지
-  "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
   "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
   "title":string, // 이름
   "body":objectArray // 본문 내용
@@ -54,5 +48,4 @@ Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
   "error":string, // (optional) 에러 메시지
-  "postNo":number,// (optional) 새글 번호
 }
