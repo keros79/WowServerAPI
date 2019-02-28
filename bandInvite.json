@@ -4,7 +4,7 @@ POST /bandInvite/{bandNo}
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "msg":string, // 초대메시지
+  "message":string, // 초대메시지
 }
 
 Response
