@@ -9,7 +9,7 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "band":objectArray // (optional) 
+  "band":objectArray // (optional) 밴드 목록 (사이즈가 0면 아예 포함하지 않음)
   [ 
     {
       "bandNo":number, // 밴드 번호
