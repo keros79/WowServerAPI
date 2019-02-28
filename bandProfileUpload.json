@@ -9,6 +9,5 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "error":string, // (optional) 에러 메시지
-  "url":string, // (optional) 파일 경로
+  "url":string, //
 }

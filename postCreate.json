@@ -53,6 +53,5 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "error":string, // (optional) 에러 메시지
-  "postNo":number,// (optional) 새글 번호
+  "postNo":number,// 새글 번호
 }

@@ -8,6 +8,5 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "error":string, // (optional) 에러 메시지
-  "unreadCount":number, // (optional) 안읽은 글 갯수
+  "unreadCount":number, // 안읽은 글 갯수
 }

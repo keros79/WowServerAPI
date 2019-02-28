@@ -10,5 +10,4 @@ Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
   "app_ver":string, // (optional) 서버에 등록된 앱 버전 정보 ("1.1")
-  "error":string, // (optional) 에러 메시지
 }

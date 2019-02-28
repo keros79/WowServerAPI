@@ -13,9 +13,8 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "error":string, // (optional) 에러 메시지
   "bandAdmin":string, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
-  "post":objectArray // (optional) 최근 순서
+  "post":objectArray // (optional) 최근 순서  (사이즈가 0면 아예 포함하지 않음)
   [
     {
       "bandNo":number, // 밴드 넘버

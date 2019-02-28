@@ -13,7 +13,6 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "sessionId":string, // (optional) 로그인 성공 시 토큰값
-  "accessToken":string, // (optional) 로그인 성공 시 토큰값
-  "error":string, // (optional) 에러 메시지
+  "sessionId":string, // 로그인 성공 시 토큰값
+  "accessToken":string, // 로그인 성공 시 토큰값
 }

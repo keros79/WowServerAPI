@@ -40,7 +40,6 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "error":string, // (optional) 에러 메시지
   "ownerId":string, // 작성자 아이디
   "timestamp":number, // 작성 시간 (UTC UNIX time)
   "content":string, // 댓글 내용 텍스트 형식

@@ -9,8 +9,7 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "error":string, // (optional) 에러 메시지
-  "band":objectArray // (optional) 성공 시
+  "band":objectArray // (optional) 
   [ 
     {
       "bandNo":number, // 밴드 번호
