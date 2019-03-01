@@ -3,6 +3,7 @@ POST /bandUpdate/{bandNo}
 
 Request
 {
+  "adminId":string, // (optional) 밴드 관리자아이디
   "name":string, // (optional) 밴드 이름
   "category":string, // (optional) 카테고리
   "type":string, // (optional) 밴드 공개여부 ["open"|"closed"]
