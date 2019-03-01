@@ -1,5 +1,5 @@
 GET /postUnreadCount/{userId}
-앱 버전 정보 요청 api
+최신 게시글 안읽은 건수 요청 api
 
 Request Parameter
 {
