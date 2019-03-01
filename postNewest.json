@@ -1,5 +1,5 @@
-GET /postList/{bandNo}
-{bandNo}로 지정된 밴드의 게시글 목록 요청 api (지난 목록 혹은 최근 목록 옵션)
+GET /postNewest/{userId}
+{userId} 속한 밴드의 모든 최신 게시글 목록 요청 api (지난 목록 혹은 최근 목록 옵션)
 
 Request Parameter
 {
@@ -12,23 +12,11 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "bandName":string, // 이 밴드 이름
-  "bandType":string, // 밴드 공개여부 ["open"|"closed"]
-  "bandCategory":string, // 이 밴드 카테고리
-  "bandDesc":string, // 이 밴드 설명
-  "bandImg":string, // 이 밴드 대표 이미지 주소("http://xxxxx/bandProfile/{bandNo}.jpg")
-  "bandAdmin":string, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
-  "bandMemberNo":number, // 이 밴드의 멤버 수
-  "notice":objectArray
-  [
-    {
-      // 추후
-    }
-
-  ],
   "post":objectArray // (optional) 최근 순서  (사이즈가 0면 아예 포함하지 않음)
   [
     {
+      "bandNo":number, // 밴드 넘버
+      "bandAdmin":string, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
       "ownerId":string, // 작성자 아이디
       "ownerName":string, // 작성자 이름
       "ownerMsg":string, // (optional) 작성자 상태 메시지
