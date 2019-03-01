@@ -3,12 +3,11 @@ POST /bandUpdate/{bandNo}
 
 Request
 {
-  "locale":string, // 언어 [ko|en|jp|zh...]å
-  "bandName":string, // 밴드 이름
-  "bandCategory":string, // 카테고리
-  "bandType":string, // 밴드 공개여부 ["open"|"closed"]
-  "bandDesc":string, // (optional) 밴드 부가 설명
-  "bandImg":string, // (optional) 밴드 대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/bandProfile/{bandNo}.jpg")
+  "name":string, // (optional) 밴드 이름
+  "category":string, // (optional) 카테고리
+  "type":string, // (optional) 밴드 공개여부 ["open"|"closed"]
+  "description":string, // (optional) 밴드 부가 설명
+  "image":string, // (optional) 밴드 대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/bandProfile/{bandNo}.jpg")
 }
 
 Response
