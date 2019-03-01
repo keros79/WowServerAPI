@@ -1,4 +1,4 @@
-GET /postUnreadCount/{postNo}
+GET /postUnreadCount/{userId}
 앱 버전 정보 요청 api
 
 Request Parameter

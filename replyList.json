@@ -20,7 +20,7 @@ Response
       "ownerMsg":string, // (optional) 작성자 상태 메시지
       "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
       "timestamp":number, // 작성 시간 (UTC UNIX time)
-      "reply_no":number, // 댓글 번호
+      "replyNo":number, // 댓글 번호
       "content":string, // 댓글 내용 텍스트 형식
       "attach":objectArray
       [ 
@@ -34,7 +34,7 @@ Response
           "url":string, // 이미지 URL (ex "http://xxxxx/image/{postNo}/{filename}")
         },
         { // (optional) 동영상
-          "type":"movie", 
+          "type":"video", 
           "name":string, // 동영상 파일명 
           "url":string, // 동영상 URL (ex "http://xxxxx/vod/{postNo}/{filename}")
         },
