@@ -5,6 +5,7 @@ Request
 {
   "userId":string, // 사용자 아이디
   "sessionId":string, // 세션 아이디
+  "accessToken":string, // 엑세스 토큰값
 }
 
 Response
