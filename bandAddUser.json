@@ -1,0 +1,14 @@
+POST /bandAddUser/{bandNo}
+밴드 사용자 추가하기 api
+
+Request
+{
+  "adminId":string, // 내 아이디 (관리자인지 체크용)
+  "userIdList":stringArray
+  [], // 추가할 사용자 아이디 리스트
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+}

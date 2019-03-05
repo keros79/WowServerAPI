@@ -13,7 +13,8 @@ Response
   [ 
     {
       "bandNo":number, // 밴드 번호
-      "adminId":string, // 이 밴드의 어드민 아이디
+      "adminId":string
+      [], // 이 밴드의 어드민 아이디
       "name":string, // 이름
       "type":string, // 밴드 공개여부 ["open"|"closed"]
       "category":string, // 카테고리

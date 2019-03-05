@@ -1,0 +1,14 @@
+POST /bandUpdateAdmin/{bandNo}
+밴드 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
+
+Request
+{
+  "adminId":string, // 내 아이디
+  "method":string, // 어드민 추가, 삭제 ['add', 'delete']
+  "userId":string, // 대상 
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+}

@@ -4,12 +4,12 @@ POST /bandCreate
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "bandAdmin":string, // 밴드 어드민 아이디
-  "bandType":string, // 밴드 공개여부 ["open"|"closed"]
-  "bandName":string, // 이름
-  "bandCategory":string, // 카테고리
-  "bandDesc":string, // (optional) 부가 설명
-  "bandImg":string, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/bandProfile/{bandNo}.jpg")
+  "adminId":string, // 밴드 어드민 아이디
+  "name":string, // 이름
+  "type":string, // 밴드 공개여부 ["open"|"closed"]
+  "category":string, // 카테고리
+  "description":string, // (optional) 부가 설명
+  "image":string, // (optional) 밴드대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/bandProfile/{bandNo}.jpg")
 }
 
 Response
