@@ -23,13 +23,15 @@ Response
     "image":string, // 이 밴드 대표 이미지 주소("http://xxxxx/bandProfile/{bandNo}.jpg")
     "memberCount":number, // 이 밴드의 멤버 수
   },
-  "notice":objectArray // 중요공지
+  "notice":objectArray // (optional) 공지 (중요공지 우선)
   [
     {
-      // 추후
+      "type":string,
+      "postNo":number,
+      "body":string,
     }
-
   ],
+  "noticeCount":number, // (optional) 공지 갯수
   "post":objectArray // (optional) 최근 순서  (사이즈가 0면 아예 포함하지 않음)
   [
     {

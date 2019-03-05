@@ -4,7 +4,7 @@ POST /bandCreate
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "adminId":string, // 밴드 어드민 아이디
+  "adminId":string, // 밴드 어드민 아이디 (내 아이디)
   "name":string, // 이름
   "type":string, // 밴드 공개여부 ["open"|"closed"]
   "category":string, // 카테고리
