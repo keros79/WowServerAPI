@@ -17,7 +17,8 @@ Response
     {
       "band":
       {
-        "adminId":string, // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
+        "adminId":stringArray
+        [], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
         "name":string, // 이 밴드 이름
       },
       "ownerId":string, // 작성자 아이디
