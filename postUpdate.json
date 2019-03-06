@@ -5,7 +5,6 @@ Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
   "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
-  "title":string, // 이름
   "body":objectArray // 본문 내용
   [
     { // (optional) 텍스트

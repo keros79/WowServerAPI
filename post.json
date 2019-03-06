@@ -1,4 +1,4 @@
-GET /post/{postNo}
+GET /bandNo/{bandNo}/post/{postNo}
 지정된 게시글의 본문 요청 api
 
 Request Parameter
@@ -21,9 +21,9 @@ Response
   "ownerMsg":string, // (optional) 작성자 상태 메시지
   "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
   "postNo":string, // 게시글 번호
-  "timestamp":number, // 작성 시간 (UTC UNIX time)
+  "modifiedAt":number, // 작성 시각 (UTC UNIX time)
+  "createdAt":number, // 작성 시각 (UTC UNIX time)
   "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
-  "title":string, // 이름
   "body":objectArray // 본문 내용
   [
     { // (optional) 텍스트

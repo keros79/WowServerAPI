@@ -11,7 +11,6 @@ Request
   "ownerMsg":string, // (optional) 작성자 상태 메시지
   "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
   "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
-  "title":string, // 이름
   "body":objectArray // 본문 내용
   [
     { // (optional) 텍스트
