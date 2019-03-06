@@ -4,7 +4,6 @@ GET /postList/{bandNo}
 Request Parameter
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "method":string, // 이전 글 or 이후 글 ["previous"|"newest"]
   "timestamp":number, // (optional) 지정 시간 (UTC UNIX time)
   "max":number, // (optional) 최대 요청 갯수 (default max : 10)
 }
@@ -19,8 +18,8 @@ Response
     "name":string, // 이 밴드 이름
     "type":string, // 밴드 공개여부 ["open"|"closed"]
     "category":string, // 이 밴드 카테고리
-    "description":string, // 이 밴드 설명
-    "image":string, // 이 밴드 대표 이미지 주소("http://xxxxx/bandProfile/{bandNo}.jpg")
+    "description":string, // (optional) 이 밴드 설명
+    "image":string, // (optional) 이 밴드 대표 이미지 주소("http://xxxxx/bandProfile/{bandNo}.jpg")
     "memberCount":number, // 이 밴드의 멤버 수
   },
   "notice":objectArray // (optional) 공지 (중요공지 우선)
@@ -39,8 +38,8 @@ Response
       "ownerName":string, // 작성자 이름
       "ownerMsg":string, // (optional) 작성자 상태 메시지
       "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
-      "modifiedAt":number, // 작성 시각 (UTC UNIX time)
-      "createdAt":number, // 작성 시각 (UTC UNIX time)
+      "modifiedAt":string, // 작성 시각 (UTC UNIX time)
+      "createdAt":string, // 작성 시각 (UTC UNIX time)
       "postNo":number, // 게시글 번호
       "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
       "body":objectArray // 본문 내용
