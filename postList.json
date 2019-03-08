@@ -34,10 +34,12 @@ Response
   "post":objectArray // (optional) 최근 순서  (사이즈가 0면 아예 포함하지 않음)
   [
     {
-      "ownerId":string, // 작성자 아이디
-      "ownerName":string, // 작성자 이름
-      "ownerMsg":string, // (optional) 작성자 상태 메시지
-      "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
+      "owener":
+      {
+        "userId":string, // 작성자 아이디
+        "name":string, // 작성자 이름
+        "profileUrl":string, // (optional) 작성자의 프로필 사진 주소 ("/band/{bandNo}/post/{postNo}/{파일명}")
+      },
       "modifiedAt":string, // 작성 시각 (UTC UNIX time)
       "createdAt":string, // 작성 시각 (UTC UNIX time)
       "postNo":number, // 게시글 번호
