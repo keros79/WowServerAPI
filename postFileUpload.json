@@ -3,12 +3,10 @@ POST /postFileUpload/{bandNo}/post/{postNo}
 
 Request
 {
-  "type":string, // ["image", "video", "file"]
-  "name":string, // 파일명
 }
 
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "url":string, // 파일 경로
+  "url":string, // 파일 경로 (상대경로)
 }

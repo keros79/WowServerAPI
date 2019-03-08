@@ -3,11 +3,10 @@ POST /userProfileUpload/{userId}
 
 Request
 {
-  "type":string, // 이미지 타입 ["jpg", "png", "bmp"]
 }
 
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "url":string, // 파일 경로
+  "url":string, // 파일 경로 (상대경로)
 }
