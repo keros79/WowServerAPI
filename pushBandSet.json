@@ -4,7 +4,7 @@ POST /pushBandSet/{BandNo}
 Request
 {
   "sessionId":string, // 내 세션 아이디
-  "type":string, // 종류 ["post"|"reply"]
+  "type":string, // 종류 ["post"|"comment"]
   "enable":boolean, // true or false
 }
 

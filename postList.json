@@ -34,7 +34,7 @@ Response
   "post":objectArray // (optional) 최근 순서  (사이즈가 0면 아예 포함하지 않음)
   [
     {
-      "owener":
+      "owner":
       {
         "userId":string, // 작성자 아이디
         "name":string, // 작성자 이름
@@ -45,15 +45,17 @@ Response
       "postNo":number, // 게시글 번호
       "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
       "body":string, // 본문 내용
-      "reply":objectArray // 게시글의 최근 댓글 2개까지
+      "comment":objectArray // (optional) 게시글의 최근 댓글 2개까지
       [
         {
-          "ownerId":string, // 작성자 아이디
-          "ownerName":string, // 작성자 이름
-          "ownerMsg":string, // (optional) 작성자 상태 메시지
-          "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
+          "owner":
+          {
+            "userId":string, // 작성자 아이디
+            "name":string, // 작성자 이름
+            "profileUrl":string, // (optional) 작성자의 프로필 사진 주소 ("/userProfile/{userid}.jpg")
+          },
           "createdAt":number, // 작성 시간 (UTC UNIX time)
-          "replyNo":number, // 댓글 번호
+          "commentNo":number, // 댓글 번호
           "content":string, // 댓글 내용 텍스트 형식
           "attachImage":stringArray // (optional) 첨부 이미지 파일주소
           [ 
@@ -70,7 +72,7 @@ Response
         }
       ],
       "emoticonCount":number, // (optional) 댓글 수 (0보다 클 경우)
-      "replyCount":number, // (optional) 댓글 수 (0보다 클 경우)
+      "commentCount":number, // (optional) 댓글 수 (0보다 클 경우)
       "readCount":number, // (optional) 읽은 사람 수(0보다 클 경우)
     },
   ],

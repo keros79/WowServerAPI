@@ -17,11 +17,11 @@ Response
     [], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
     "name":string, // 이 밴드 이름
   },
-  "owener":
+  "owner":
   {
     "userId":string, // 작성자 아이디
     "name":string, // 작성자 이름
-    "profileUrl":string, // (optional) 작성자의 프로필 사진 주소 ("/band/{bandNo}/post/{postNo}/{파일명}")
+    "profileUrl":string, // (optional) 작성자의 프로필 사진 주소 ("/userProfile/{userid}.jpg")
   },
   "modifiedAt":string, // 작성 시각 (UTC UNIX time)
   "createdAt":string, // 작성 시각 (UTC UNIX time)
@@ -30,12 +30,12 @@ Response
   "emoticon":objectArray // (optional) 이모티콘 리스트
   [
     {
-      "owenerId":string, // 사용자 아이디
-      "owenerImg":string, // 사용자 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
-      "emoticon":string, // 이모티콘 유니코드 
+      "userId":string, // 사용자 아이디
+      "profileUrl":string, // 사용자 프로필 사진 주소 ("/userProfile/{userid}.jpg")
+      "unicode":string, // 이모티콘 유니코드 
     }
   ],
-  "replyCount":number, // (optional) 댓글 수 (0보다 클 경우)
+  "commentCount":number, // (optional) 댓글 수 (0보다 클 경우)
   "readCount":number, // (optional) 읽은 사람 수(0보다 클 경우)
 }
 
@@ -48,17 +48,17 @@ Response
   { // (optional) 이미지
     "type":"image", 
     "name":string, // 이미지 파일명 
-    "url":string, // 이미지 URL (ex "http://xxxxx/image/{postNo}/{filename}")
+    "url":string, // 이미지 URL (ex "/postFile/{postNo}/{filename}")
   },
   { // (optional) 동영상
     "type":"video", 
     "name":string, // 동영상 파일명 
-    "url":string, // 동영상 URL (ex "http://xxxxx/vod/{postNo}/{filename}")
+    "url":string, // 동영상 URL (ex "/postFile/{postNo}/{filename}")
   },
   { // (optional) 파일
     "type":"file", 
     "name":string, // 파일명 
-    "url":string, // 파일 URL (ex "http://xxxxx/file/{postNo}/{filename}")
+    "url":string, // 파일 URL (ex "/postFile/{postNo}/{filename}")
   },
   { // (optional) 스티커
     "type":"sticker",
