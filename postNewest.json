@@ -57,7 +57,7 @@ Response
           },
           { // (optional) 스티커
             "type":"sticker",
-            "sticker":string, // 스티커
+            "name":string, // 스티커 이름
           },
           { // (optional) 투표
             "type":"vote", 
