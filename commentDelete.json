@@ -1,4 +1,4 @@
-POST /replyDelete/{replyNo}
+POST /commentDelete/{commentNo}
 댓글 지우기 api
 
 Request

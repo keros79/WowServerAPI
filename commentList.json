@@ -1,4 +1,4 @@
-GET /replyList/{postNo}
+GET /commentList/{postNo}
 지정된 게시글의 댓글 리스트 요청 api
 
 Request Parameter
@@ -12,7 +12,7 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "reply":objectArray // (optional) 댓글 리스트 (사이즈가 0면 아예 포함하지 않음)
+  "comment":objectArray // (optional) 댓글 리스트 (사이즈가 0면 아예 포함하지 않음)
   [
     {
       "ownerId":string, // 작성자 아이디
@@ -20,7 +20,7 @@ Response
       "ownerMsg":string, // (optional) 작성자 상태 메시지
       "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
       "createdAt":string, // 작성 시간 (UTC UNIX time)
-      "replyNo":number, // 댓글 번호
+      "commentNo":number, // 댓글 번호
       "content":string, // 댓글 내용 텍스트 형식
       "attach":objectArray
       [ 

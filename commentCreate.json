@@ -1,10 +1,13 @@
-POST /replyUpdate/{replyNo}
-댓글 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
+POST /commentCreate/{postNo}
+새 댓글 작성하기 api
 
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
   "ownerId":string, // 작성자 아이디
+  "ownerName":string, // 작성자 이름
+  "ownerMsg":string, // (optional) 작성자 상태 메시지
+  "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
   "content":string, // 댓글 내용 텍스트 형식
   "attach":objectArray
   [ 
@@ -37,4 +40,7 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
+  "ownerId":string, // 작성자 아이디
+  "timestamp":number, // 작성 시간 (UTC UNIX time)
+  "content":string, // 댓글 내용 텍스트 형식
 }
