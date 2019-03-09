@@ -40,8 +40,8 @@ Response
         "name":string, // 작성자 이름
         "profileUrl":string, // (optional) 작성자의 프로필 사진 주소 ("/band/{bandNo}/post/{postNo}/{파일명}")
       },
-      "modifiedAt":string, // 작성 시각 (UTC UNIX time)
-      "createdAt":string, // 작성 시각 (UTC UNIX time)
+      "modifiedAt":number, // 작성 시각 (UTC UNIX time)
+      "createdAt":number, // 작성 시각 (UTC UNIX time)
       "postNo":number, // 게시글 번호
       "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
       "body":string, // 본문 내용

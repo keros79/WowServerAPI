@@ -19,7 +19,7 @@ Response
       "ownerName":string, // 작성자 이름
       "ownerMsg":string, // (optional) 작성자 상태 메시지
       "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
-      "createdAt":string, // 작성 시간 (UTC UNIX time)
+      "createdAt":number, // 작성 시간 (UTC UNIX time)
       "commentNo":number, // 댓글 번호
       "content":string, // 댓글 내용 텍스트 형식
       "attach":objectArray
