@@ -4,9 +4,8 @@ GET /postNewest/{userId}
 Request Parameter
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "method":string, // 이전 글 or 이후 글 ["previous"|"newest"]
-  "timestamp":number, // (optional) 지정 시간 (UTC UNIX time)
-  "max":number, // (optional) 최대 요청 갯수 (default max : 10)
+  "postNo":number, // (optional) 지정된 postNo가 있으면 그 이전 게시물 리스트, 없으면 가장 최근 리스트
+  "limit":number, // (optional) 최대 요청 갯수 (default limit : 10)
 }
 
 Response
