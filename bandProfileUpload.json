@@ -1,5 +1,5 @@
 POST /bandFileUpload/{bandNo}
-밴드 프로파일 이미지 업로드 api
+밴드 프로파일 이미지 업로드 api (field name : "bandProfile")
 
 Request
 {

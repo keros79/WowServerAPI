@@ -1,5 +1,5 @@
 POST /userProfileUpload/{userId}
-사용자 프로파일 이미지 업로드 api
+사용자 프로파일 이미지 업로드 api (field name : "userProfile")
 
 Request
 {

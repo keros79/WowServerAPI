@@ -40,4 +40,5 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
+  "commentNo":number,// 댓글 번호
 }
