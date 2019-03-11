@@ -7,5 +7,5 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "timestamp":number // UTC 타임스탬프
+  "timestamp":string // UTC 타임스탬프
 }

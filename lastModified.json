@@ -8,5 +8,5 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "timestamp":number, // 서버 최종 변경 시간 (UTC UNIX time, 클라이언트에 저장된 시간과 비교)
+  "timestamp":string, // 서버 최종 변경 시간 (UTC UNIX time, 클라이언트에 저장된 시간과 비교)
 }
