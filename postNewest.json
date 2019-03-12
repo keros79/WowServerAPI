@@ -23,8 +23,8 @@ Response
       "owner":
       {
         "userId":string, // 작성자 아이디
-        "name":string, // 작성자 이름
-        "profileUrl":string, // (optional) 작성자의 프로필 사진 주소 ("/band/{bandNo}/post/{postNo}/{파일명}")
+        "name":string, // (Nullable) 작성자 이름
+        "profileUrl":string, // (Nullable)  작성자의 프로필 사진 주소 ("/band/{bandNo}/post/{postNo}/{파일명}")
       },
       "modifiedAt":string, // 작성 시각 (UTC UNIX time)
       "createdAt":string, // 작성 시각 (UTC UNIX time)
@@ -73,10 +73,12 @@ Response
       "comment":objectArray // 게시글의 최근 댓글 2개까지
       [
         {
-          "ownerId":string, // 작성자 아이디
-          "ownerName":string, // 작성자 이름
-          "ownerMsg":string, // (optional) 작성자 상태 메시지
-          "ownerImg":string, // (optional) 작성자의 프로필 사진 주소 ("http://xxxxx/profile/{userId}.jpg")
+          "owner":
+          {
+            "userId":string, // 작성자 아이디
+            "name":string, // (Nullable) 작성자 이름
+            "profileUrl":string, // (Nullable) 작성자의 프로필 사진 주소 ("/userProfile/{userid}.jpg")
+          },
           "createdAt":string, // 작성 시간 (UTC UNIX time)
           "commentNo":number, // 댓글 번호
           "content":string, // 댓글 내용 텍스트 형식

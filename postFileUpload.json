@@ -1,6 +1,5 @@
 POST /postFileUpload/{bandNo}/post/{postNo}
-게시글 파일 업로드 api
-field name : "postFile"
+게시글 파일 업로드 api (field name : "postFile")
 
 Request
 {

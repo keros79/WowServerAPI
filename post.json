@@ -15,13 +15,13 @@ Response
     "bandNo":number,
     "adminId":stringArray
     [], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
-    "name":string, // 이 밴드 이름
+    "name":string, // (Nullable) 이 밴드 이름
   },
   "owner":
   {
     "userId":string, // 작성자 아이디
-    "name":string, // 작성자 이름
-    "profileUrl":string, // (optional) 작성자의 프로필 사진 주소 ("/userProfile/{userid}.jpg")
+    "name":string, // (Nullable) 작성자 이름
+    "profileUrl":string, // (Nullable) 작성자의 프로필 사진 주소 ("/userProfile/{userid}.jpg")
   },
   "modifiedAt":string, // 작성 시각 (UTC UNIX time)
   "createdAt":string, // 작성 시각 (UTC UNIX time)
@@ -31,7 +31,7 @@ Response
   [
     {
       "userId":string, // 사용자 아이디
-      "profileUrl":string, // 사용자 프로필 사진 주소 ("/userProfile/{userid}.jpg")
+      "profileUrl":string, // (Nullable) 사용자 프로필 사진 주소 ("/userProfile/{userid}.jpg")
       "unicode":string, // 이모티콘 유니코드 
     }
   ],
