@@ -1,4 +1,4 @@
-GET /bandNo/{bandNo}/post/{postNo}
+GET /band/{bandNo}/post/{postNo}
 지정된 게시글의 본문 요청 api
 
 Request Parameter
