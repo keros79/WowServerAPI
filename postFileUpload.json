@@ -1,4 +1,4 @@
-POST /postFileUpload/{bandNo}/post/{postNo}
+POST /postFileUpload/{bandNo}
 게시글 파일 업로드 api (field name : "postFile")
 
 Request
