@@ -4,8 +4,7 @@ POST /bandAddUser/{bandNo}
 Request
 {
   "adminId":string, // 내 아이디 (관리자인지 체크용)
-  "userIdList":stringArray
-  [], // 추가할 사용자 아이디 리스트
+  "userIdList":string[], // 추가할 사용자 아이디 리스트
 }
 
 Response

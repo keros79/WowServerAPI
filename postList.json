@@ -13,13 +13,12 @@ Response
   "apiVer":string, // rest api 버전 ("1.0")
   "band":
   {
-    "adminId":stringArray
-    [], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
-    "name":string, // 이 밴드 이름
-    "type":string, // 밴드 공개여부 ["open"|"closed"]
-    "category":string, // 이 밴드 카테고리
-    "description":string, // (optional) 이 밴드 설명
-    "image":string, // (optional) 이 밴드 대표 이미지 주소("http://xxxxx/bandProfile/{bandNo}.jpg")
+    "adminId":string[], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
+    "name":string, // (Nullable) 이 밴드 이름
+    "type":string, // (Nullable) 밴드 공개여부 ["open"|"closed"]
+    "category":string, // (Nullable) 이 밴드 카테고리
+    "description":string, // (Nullable) 이 밴드 설명
+    "image":string, // (Nullable) 이 밴드 대표 이미지 주소("http://xxxxx/bandProfile/{bandNo}.jpg")
     "memberCount":number, // 이 밴드의 멤버 수
   },
   "notice":objectArray // (optional) 공지 (중요공지 우선)
@@ -57,18 +56,9 @@ Response
           "createdAt":string, // 작성 시간 (UTC UNIX time)
           "commentNo":number, // 댓글 번호
           "content":string, // 댓글 내용 텍스트 형식
-          "attachImage":stringArray // (optional) 첨부 이미지 파일주소
-          [ 
-            string
-          ],
-          "attachVideo":stringArray // (optional) 첨부 동영상 파일주소
-          [ 
-            string
-          ],
-          "attachFile":stringArray // (optional) 첨부 파일 파일주소
-          [ 
-            string
-          ],
+          "attachImage":string[], // (optional) 첨부 이미지 파일주소
+          "attachVideo":string[], // (optional) 첨부 동영상 파일주소
+          "attachFile":string[], // (optional) 첨부 파일 파일주소
         }
       ],
       "emoticonCount":number, // (optional) 댓글 수 (0보다 클 경우)

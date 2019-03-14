@@ -13,8 +13,7 @@ Response
   "band":
   {
     "bandNo":number,
-    "adminId":stringArray
-    [], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
+    "adminId":string[], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
     "name":string, // (Nullable) 이 밴드 이름
   },
   "owner":

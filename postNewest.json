@@ -16,8 +16,7 @@ Response
     {
       "band":
       {
-        "adminId":stringArray
-        [], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
+        "adminId":string[], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
         "name":string, // 이 밴드 이름
       },
       "owner":
@@ -82,18 +81,9 @@ Response
           "createdAt":string, // 작성 시간 (UTC UNIX time)
           "commentNo":number, // 댓글 번호
           "content":string, // 댓글 내용 텍스트 형식
-          "attachImage":stringArray // (optional) 첨부 이미지 파일주소
-          [ 
-            string
-          ],
-          "attachVideo":stringArray // (optional) 첨부 동영상 파일주소
-          [ 
-            string
-          ],
-          "attachFile":stringArray // (optional) 첨부 파일 파일주소
-          [ 
-            string
-          ],
+          "attachImage":string[], // (optional) 첨부 이미지 파일주소
+          "attachVideo":string[], // (optional) 첨부 동영상 파일주소
+          "attachFile":string[], // (optional) 첨부 파일 파일주소
         }
       ],
       "emoticonCount":number, // (optional) 댓글 수 (0보다 클 경우)
