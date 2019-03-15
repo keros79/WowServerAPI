@@ -8,5 +8,6 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
+  "fileNo":number, // 파일번호
   "url":string, // 파일 경로 (상대경로)
 }
