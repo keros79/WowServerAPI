@@ -46,16 +46,19 @@ Response
   },
   { // (optional) 이미지
     "type":"image", 
+    "fileNo":number, // 파일 번호
     "name":string, // 이미지 파일명 
     "url":string, // 이미지 URL (ex "/postFile/{postNo}/{filename}")
   },
   { // (optional) 동영상
     "type":"video", 
+    "fileNo":number, // 파일 번호
     "name":string, // 동영상 파일명 
     "url":string, // 동영상 URL (ex "/postFile/{postNo}/{filename}")
   },
   { // (optional) 파일
     "type":"file", 
+    "fileNo":number, // 파일 번호
     "name":string, // 파일명 
     "url":string, // 파일 URL (ex "/postFile/{postNo}/{filename}")
   },
