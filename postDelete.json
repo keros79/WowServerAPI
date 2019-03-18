@@ -4,6 +4,8 @@ POST /postDelete/{postNo}
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
+  "bandNo":number, // 밴드번호
+  "userId":string, // 사용자 아이디
 }
 
 Response
