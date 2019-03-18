@@ -8,6 +8,7 @@ Request
   "userId":string, // 사용자 아이디
   "type":string, // (optional) 게시글 타입 ["normal"|"notice"|"birth"]
   "body":string, // (optional) 본문 내용
+  "fileList":number[] // (optional) 삭제할 파일 번호 리스트
 }
 
 Response
@@ -15,6 +16,6 @@ Response
   "apiVer":string, // rest api 버전 ("1.0")
 }
 
-Error1)
+Error1) 삭제 대상 게시물이 없을 경우
 NotFoundException
 {"apiVer":"1.0","errorCode":"NotFoundException","error":"Not found the post#5"}
