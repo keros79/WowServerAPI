@@ -6,11 +6,15 @@ Request
   "locale":string, // 언어 [ko|en|jp|zh...]
   "bandNo":number, // 밴드번호
   "userId":string, // 사용자 아이디
-  "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
-  "body":string, // 본문 내용
+  "type":string, // (optional) 게시글 타입 ["normal"|"notice"|"birth"]
+  "body":string, // (optional) 본문 내용
 }
 
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
 }
+
+Error1)
+NotFoundException
+{"apiVer":"1.0","errorCode":"NotFoundException","error":"Not found the post#5"}

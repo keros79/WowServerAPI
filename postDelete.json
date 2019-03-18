@@ -3,7 +3,6 @@ POST /postDelete/{postNo}
 
 Request
 {
-  "locale":string, // 언어 [ko|en|jp|zh...]
   "bandNo":number, // 밴드번호
   "userId":string, // 사용자 아이디
 }
@@ -12,3 +11,7 @@ Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
 }
+
+Error1) 삭제 대상 게시물이 없을 경우
+NotFoundException
+{"apiVer":"1.0","errorCode":"NotFoundException","error":"Not found the post#5"}
