@@ -12,3 +12,8 @@ Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
 }
+
+
+Error1) 세션아이디가 존재 하지 않음.
+NotFoundException
+{"apiVer":"1.0","errorCode":"NotFoundException","error":"Not exist sessionId : "}
