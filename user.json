@@ -1,0 +1,16 @@
+
+GET /user/{userid}
+사용자 정보 api
+
+Request Parameter
+{
+  "locale":string, // 언어 [ko|en|jp|zh...]
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "name":string, // 이름
+  "statusMessage":string, // (optional) 상태 메시지
+  "profileImage":string, // (optional) 사용자 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")
+}

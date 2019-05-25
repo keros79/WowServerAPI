@@ -1,0 +1,11 @@
+DELETE /user/{userId}
+사용자 삭제 api
+
+Request
+{
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+}

@@ -1,4 +1,4 @@
-POST /userUpdate/{userId}
+PUT /user/{userId}
 사용자 정보 변경 api
 
 Request

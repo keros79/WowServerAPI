@@ -1,4 +1,4 @@
-POST /postDelete/{postNo}
+DELETE /post/{postNo}
 글 지우기 api (권한은 클라이언트에서 우선 자체 필터링)
 
 Request

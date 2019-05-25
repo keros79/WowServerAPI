@@ -1,4 +1,4 @@
-POST /postCreate
+POST /post
 새 글 작성하기 api
 
 Request

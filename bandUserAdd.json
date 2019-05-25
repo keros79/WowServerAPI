@@ -1,4 +1,4 @@
-POST /bandAddUser/{bandNo}
+POST /bandUserAdd/{bandNo}
 밴드 사용자 추가하기 api
 
 Request

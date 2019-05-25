@@ -1,9 +1,8 @@
-POST /userCreate
+POST /user/{userId}
 사용자 추가 api
 
 Request
 {
-  "userId":string, // 사용자 아이디
   "name":string, // 이름
   "statusMessage":string, // (optional) 상태 메시지
   "profileImage":string, // (optional) 사용자 프로필 사진 주소 ("http://xxxxx/profile/{userid}.jpg")

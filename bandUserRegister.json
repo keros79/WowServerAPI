@@ -1,4 +1,4 @@
-POST /bandRegister/{bandNo}
+POST /bandUserRegister/{bandNo}
 밴드 가입 신청 수락 api (for 어드민)
 
 Request
