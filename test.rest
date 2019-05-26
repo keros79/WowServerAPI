@@ -1,0 +1,2 @@
+###
+GET http://ucband.ucwaremobile.com:8899/ping HTTP/1.1
