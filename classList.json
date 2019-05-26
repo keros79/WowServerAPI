@@ -3,9 +3,10 @@ GET /classList/{bandNo}
 
 Request
 {
-  "startDate":number, // 시작 날짜
-  "endDate":number, // 종료 날짜
-  "userId":string[], // (Optional) 선생 아이디 선택
+  "userId":string, // 내 아이디 (어드민일 경우 예약자 리스트가 포함)
+  "startDate":number, // 시작 날짜 (YYYYMMDD)
+  "endDate":number, // 종료 날짜 (YYYYMMDD)
+  "ownerId":string[], // (Optional) 선생 아이디 선택
 }
 
 Response

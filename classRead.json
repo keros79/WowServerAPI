@@ -3,7 +3,7 @@ GET /class/{bandNo}/{classNo}
 
 Request
 {
-  "userId":string, // 자 아이디
+  "userId":string, // 내 아이디
 }
 
 Response
