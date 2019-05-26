@@ -8,6 +8,7 @@ Request
   "body":string, // (Optional) 본문 내용
   "startAt":string, // (Optional) 시작시각
   "endAt":string, // (Optional) 종료시각
+  "maxMembers":number, // (Optional) 최대 참여인원
 }
 
 Response
