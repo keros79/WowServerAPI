@@ -1,5 +1,5 @@
 GET /reservationList/{bandNo}/{userId}
-예약 리스트 검색 api
+내 예약 리스트 검색 api
 
 Request
 {
@@ -10,5 +10,11 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "reservationNo":number // 예약번호
+  "classList":objectArray // 클래스 리스트
+  [
+    "title":string, // 제목
+    "body":string, // 본문 내용
+    "startAt":string, // 시작시각
+    "endAt":string, // 종료시각
+  ]
 }

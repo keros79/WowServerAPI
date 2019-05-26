@@ -1,4 +1,4 @@
-GET /classList/{bandNo}/{classNo}
+GET /classList/{bandNo}
 클래스 리스트 검색 api
 
 Request
@@ -11,7 +11,7 @@ Request
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "class":objectArray
+  "classList":objectArray
   [
     "title":string, // 제목
     "body":string, // 본문 내용

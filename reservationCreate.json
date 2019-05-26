@@ -1,9 +1,8 @@
-POST /reservation/{classNo}
+POST /reservation/{bandNo}/{classNo}
 예약하기 api ({classNo}가 0이면 자유시간 예약)
 
 Request
 {
-  "bandNo":number, // 밴드 번호
   "userId":string, // 작성자 아이디
   "date":number, // 에약날짜 (YYYYMMDD)
 }
