@@ -4,10 +4,10 @@ UPDATE /class/{bandNo}/{classNo}
 Request
 {
   "userId":string, // 작성자 아이디
-  "title":string, // (Optional) 제목
+  "title":string, // 제목
   "body":string, // (Optional) 본문 내용
-  "startAt":string, // (Optional) 시작시각
-  "endAt":string, // (Optional) 종료시각
+  "startAt":date, // (Optional) 시작시각 (UTC)
+  "endAt":date, // (Optional) 종료시각 (UTC)
   "maxMembers":number, // (Optional) 최대 참여인원
 }
 

@@ -4,7 +4,6 @@ POST /reservation/{bandNo}/{classNo}
 Request
 {
   "userId":string, // 작성자 아이디
-  "date":number, // 에약날짜 (YYYYMMDD)
 }
 
 Response

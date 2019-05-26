@@ -6,11 +6,10 @@ Request
   "bandNo":number, // 밴드 번호
   "userId":string, // 작성자 아이디
   "title":string, // 제목
-  "body":string, // 본문 내용
-  "startAt":string, // 시작시각
-  "endAt":string, // 종료시각
-  "date":number, // 해당 날짜 (YYYYMMDD)
-  "maxMembers":number, // 최대 참여인원
+  "body":string, // (Optional) 본문 내용
+  "startAt":string, // 시작시각 (UTC)
+  "endAt":string, // 종료시각 (UTC)
+  "maxMembers":number, // (Optional) 최대 참여인원 (default 0)
 }
 
 Response

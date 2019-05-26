@@ -3,8 +3,8 @@ GET /reservationList/{bandNo}/{userId}
 
 Request
 {
-  "startDate":number, // 시작 날짜
-  "endDate":number, // 종료 날짜
+  "startDate":date, // 시작 시각 (UTC)
+  "endDate":date, // 종료 시각 (UTC)
 }
 
 Response
