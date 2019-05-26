@@ -1,0 +1,12 @@
+POST /memberRegister/{bandNo}
+밴드 등록 신청 api (for 어드민)
+
+Request
+{
+  "userId":string, // 내 아이디
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+}

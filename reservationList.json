@@ -1,0 +1,14 @@
+GET /reservationList/{bandNo}/{userId}
+예약 리스트 검색 api
+
+Request
+{
+  "startDate":number, // 시작 날짜
+  "endDate":number, // 종료 날짜
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "reservationNo":number // 예약번호
+}

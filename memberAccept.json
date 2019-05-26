@@ -1,4 +1,4 @@
-POST /bandUserInviteAnswer/{bandNo}
+POST /memberAccept/{bandNo}
 밴드 초대 응답 api
 
 Request

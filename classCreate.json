@@ -1,0 +1,19 @@
+POST /class
+클래스 만들기 api
+
+Request
+{
+  "bandNo":number, // 밴드 번호
+  "userId":string, // 작성자 아이디
+  "title":string, // 제목
+  "body":string, // 본문 내용
+  "startAt":string, // 시작시각
+  "endAt":string, // 종료시각
+  "date":number, // 해당 날짜 (YYYYMMDD)
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "classNo":number,// 새글 번호
+}

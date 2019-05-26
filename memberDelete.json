@@ -1,10 +1,11 @@
-POST /bandLeave/{bandNo}
-가입한 밴드에서 탈퇴하기 api
+DELETE /memberDelete/{bandNo}
+밴드에서 사용자 삭제하기 api
 
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
   "userId":string, // 사용자 아이디
+  "adminId":string, // 요청자 아이디(관리자인지 체크용)
 }
 
 Response

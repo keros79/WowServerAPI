@@ -1,0 +1,29 @@
+GET /classList/{bandNo}/{classNo}
+클래스 리스트 검색 api
+
+Request
+{
+  "startDate":number, // 시작 날짜
+  "endDate":number, // 종료 날짜
+  "userId":string[], // (Optional) 선생 아이디 선택
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "class":objectArray
+  [
+    "title":string, // 제목
+    "body":string, // 본문 내용
+    "startAt":string, // 시작시각
+    "endAt":string, // 종료시각
+    "userList":objectArray // 예약자 리스트
+    [
+        {
+            "userId":string, // 사용자 아이디
+            "name":string, // (Nullable) 사용자 이름
+            "profileUrl":string, // (Nullable) 사용자 프로필 사진 주소 ("/userProfile/{userid}.jpg")
+        },
+    ]
+  ]
+}

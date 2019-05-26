@@ -1,0 +1,16 @@
+UPDATE /class/{bandNo}/{classNo}
+클래스 정보 변경하기 api
+
+Request
+{
+  "userId":string, // 작성자 아이디
+  "title":string, // (Optional) 제목
+  "body":string, // (Optional) 본문 내용
+  "startAt":string, // (Optional) 시작시각
+  "endAt":string, // (Optional) 종료시각
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+}

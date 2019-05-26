@@ -1,0 +1,20 @@
+GET /userList/{bandNo}
+밴드 내 사용자 목록 요청 api
+
+Request Parameter
+{
+  "locale":string, // 언어 [ko|en|jp|zh...]
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "userList":objectArray // 사용자 목록
+  [ 
+    {
+      "userId":string, // 사용자 아이디
+      "name":string, // (Nullable) 사용자 이름
+      "profileUrl":string, // (Nullable) 사용자의 프로필 사진 주소 ("/userProfile/{userid}.jpg")
+    },
+  ],
+}

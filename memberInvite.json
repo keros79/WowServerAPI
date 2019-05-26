@@ -1,4 +1,4 @@
-POST /bandInvite/{bandNo}
+POST /memberInvite/{bandNo}
 밴드 초대하기 api (초대 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
