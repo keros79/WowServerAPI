@@ -21,12 +21,14 @@ Response
           "name":string, // (Nullable) 사용자 이름
           "profileUrl":string, // (Nullable) 사용자 프로필 사진 주소 ("/userProfile/{userid}.jpg")
       },
+      "bandNo":number, // 밴드 번호
+      "classNo":number, // 클래스 번호
       "title":string, // 제목
       "body":string, // (Nullable) 본문 내용
       "startAt":string, // 시작시각 (UTC)
       "endAt":string, // 종료시각 (UTC)
       "maxMembers":number, // 최대 참여인원
-      "userList":objectArray // (Optional) 예약자 리스트 (어드민일 경우 표시)
+      "reservation":objectArray // 예약자 리스트 (어드민일 경우 표시)
       [
           {
               "userId":string, // 사용자 아이디
