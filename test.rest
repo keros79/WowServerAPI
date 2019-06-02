@@ -1,2 +1,6 @@
 ###
 GET http://ucband.ucwaremobile.com:8899/ping HTTP/1.1
+
+### classList
+GET http://ucband.ucwaremobile.com:8899/classlist/?centerid=hellparty&userid=remake111&startdate=190602&enddate=190602 HTTP/1.1
+

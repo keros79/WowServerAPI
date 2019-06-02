@@ -1,4 +1,4 @@
-DELETE /reservation/{bandNo}/{reservationNo}
+DELETE /reservation/bandno/{bandno}/reservationno/{reservationno}
 예약 취소하기 api
 
 Request
