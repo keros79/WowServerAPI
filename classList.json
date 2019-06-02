@@ -1,13 +1,13 @@
-GET /classList/{bandNo}
+GET /classlist/centerno/{centerno}/userid/{userid}/startdate/{startdate}/enddate/{enddate}
 클래스 리스트 검색 api
 
-Request
-{
-  "userId":string, // 내 아이디 (어드민일 경우 예약자 리스트가 포함)
-  "startDate":number, // 시작 날짜 (YYYYMMDD)
-  "endDate":number, // 종료 날짜 (YYYYMMDD)
-  "ownerId":string[], // (Optional) 선생 아이디 선택
-}
+// Request
+// {
+//   "userId":string, // 내 아이디 (어드민일 경우 예약자 리스트가 포함)
+//   "startDate":number, // 시작 날짜 (YYYYMMDD)
+//   "endDate":number, // 종료 날짜 (YYYYMMDD)
+//   "ownerId":string[], // (Optional) 선생 아이디 선택
+// }
 
 Response
 {
