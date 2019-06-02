@@ -8,7 +8,7 @@ Request
   "body":string, // (Optional) 본문 내용
   "startAt":string, // 시작시각 (UTC)
   "endAt":string, // 종료시각 (UTC)
-  "maxMembers":number, // (Optional) 최대 참여인원 (default 0 : 무제한)
+  "maxMember":number, // (Optional) 최대 참여인원 (default 0 : 무제한)
 }
 
 Response

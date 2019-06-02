@@ -1,4 +1,4 @@
-DELETE /memberDelete/{centerNo}
+DELETE /center/{centerNo}/user/{userId}
 센터에서 사용자 삭제하기 api
 
 Request

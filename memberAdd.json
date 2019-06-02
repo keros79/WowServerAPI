@@ -1,4 +1,4 @@
-POST /memberAdd/{centerNo}
+POST /center/{centerNo}/user
 센터 사용자 추가하기 api
 
 Request
