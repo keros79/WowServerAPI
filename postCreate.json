@@ -4,7 +4,7 @@ POST /post
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "bandNo":number, // 밴드 번호
+  "centerNo":number, // 센터 번호
   "userId":string, // 작성자 아이디
   "type":string, // 게시글 타입 ["normal"|"notice"|"birth"]
   "body":string // 본문 내용

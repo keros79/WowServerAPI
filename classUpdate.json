@@ -1,4 +1,4 @@
-UPDATE /class/{bandNo}/{classNo}
+UPDATE /class/{centerNo}/{classNo}
 클래스 정보 변경하기 api
 
 Request

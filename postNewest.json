@@ -1,5 +1,5 @@
 GET /postNewest/{userId}
-{userId} 속한 밴드의 모든 최신 게시글 목록 요청 api (지난 목록 혹은 최근 목록 옵션)
+{userId} 속한 센터의 모든 최신 게시글 목록 요청 api (지난 목록 혹은 최근 목록 옵션)
 
 Request Parameter
 {
@@ -14,16 +14,16 @@ Response
   "post":objectArray // (optional) 최근 순서  (사이즈가 0면 아예 포함하지 않음)
   [
     {
-      "band":
+      "center":
       {
-        "adminId":string[], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
-        "name":string, // 이 밴드 이름
+        "adminId":string[], // 이 센터의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
+        "name":string, // 이 센터 이름
       },
       "owner":
       {
         "userId":string, // 작성자 아이디
         "name":string, // (Nullable) 작성자 이름
-        "profileUrl":string, // (Nullable)  작성자의 프로필 사진 주소 ("/band/{bandNo}/post/{postNo}/{파일명}")
+        "profileUrl":string, // (Nullable)  작성자의 프로필 사진 주소 ("/center/{centerNo}/post/{postNo}/{파일명}")
       },
       "modifiedAt":string, // 작성 시각 (UTC UNIX time)
       "createdAt":string, // 작성 시각 (UTC UNIX time)

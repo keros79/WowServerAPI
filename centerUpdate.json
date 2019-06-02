@@ -1,0 +1,16 @@
+PUT /center/{centerNo}
+센터 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
+
+Request
+{
+  "name":string, // (optional) 센터 이름
+  "category":string, // (optional) 카테고리
+  "type":string, // (optional) 센터 공개여부 ["open"|"closed"]
+  "description":string, // (optional) 센터 부가 설명
+  "image":string, // (optional) 센터 대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/centerProfile/{centerNo}.jpg")
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+}

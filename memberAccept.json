@@ -1,5 +1,5 @@
-POST /memberAccept/{bandNo}
-밴드 초대 응답 api
+POST /memberAccept/{centerNo}
+센터 초대 응답 api
 
 Request
 {

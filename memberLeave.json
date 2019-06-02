@@ -1,5 +1,5 @@
-POST /memberLeave/{bandNo}
-가입한 밴드에서 탈퇴하기 api
+POST /memberLeave/{centerNo}
+가입한 센터에서 탈퇴하기 api
 
 Request
 {

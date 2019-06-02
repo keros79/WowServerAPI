@@ -4,7 +4,7 @@ PUT /post/{postNo}
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "bandNo":number, // 밴드번호
+  "centerNo":number, // 센터번호
   "userId":string, // 사용자 아이디
   "type":string, // (optional) 게시글 타입 ["normal"|"notice"|"birth"]
   "body":string, // (optional) 본문 내용

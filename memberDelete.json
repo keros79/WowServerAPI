@@ -1,5 +1,5 @@
-DELETE /memberDelete/{bandNo}
-밴드에서 사용자 삭제하기 api
+DELETE /memberDelete/{centerNo}
+센터에서 사용자 삭제하기 api
 
 Request
 {

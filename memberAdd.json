@@ -1,5 +1,5 @@
-POST /memberAdd/{bandNo}
-밴드 사용자 추가하기 api
+POST /memberAdd/{centerNo}
+센터 사용자 추가하기 api
 
 Request
 {

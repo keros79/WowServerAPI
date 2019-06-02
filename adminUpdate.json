@@ -1,5 +1,5 @@
-PUT /admin/{bandNo}
-밴드 어드민 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
+PUT /admin/{centerNo}
+센터 어드민 수정하기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
 {

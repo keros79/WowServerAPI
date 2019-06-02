@@ -1,5 +1,5 @@
-POST /memberRegister/{bandNo}
-밴드 등록 신청 api (for 어드민)
+POST /memberRegister/{centerNo}
+센터 등록 신청 api (for 어드민)
 
 Request
 {

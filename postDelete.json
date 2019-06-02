@@ -3,7 +3,7 @@ DELETE /post/{postNo}
 
 Request
 {
-  "bandNo":number, // 밴드번호
+  "centerNo":number, // 센터번호
   "userId":string, // 사용자 아이디
   "fileList":number[] // (optional) 게시글 내 파일이 존재한다면 모든 파일 번호 리스트
 }

@@ -1,4 +1,4 @@
-GET /class/{bandNo}/{classNo}
+GET /class/{centerNo}/{classNo}
 클래스 읽기 api
 
 Request

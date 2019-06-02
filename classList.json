@@ -21,7 +21,7 @@ Response
           "name":string, // (Nullable) 사용자 이름
           "profileUrl":string, // (Nullable) 사용자 프로필 사진 주소 ("/userProfile/{userid}.jpg")
       },
-      "bandNo":number, // 밴드 번호
+      "centerNo":number, // 센터 번호
       "classNo":number, // 클래스 번호
       "title":string, // 제목
       "body":string, // (Nullable) 본문 내용

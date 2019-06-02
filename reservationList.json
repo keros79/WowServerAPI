@@ -1,4 +1,4 @@
-GET /reservationList/{bandNo}/{userId}
+GET /reservationList/{centerNo}/{userId}
 내 예약 리스트 검색 api
 
 Request

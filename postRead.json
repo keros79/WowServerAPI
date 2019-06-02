@@ -1,4 +1,4 @@
-GET /band/{bandNo}/post/{postNo}
+GET /center/{centerNo}/post/{postNo}
 지정된 게시글의 본문 요청 api
 
 Request Parameter
@@ -10,11 +10,11 @@ Request Parameter
 Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
-  "band":
+  "center":
   {
-    "bandNo":number,
-    "adminId":string[], // 이 밴드의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
-    "name":string, // (Nullable) 이 밴드 이름
+    "centerNo":number,
+    "adminId":string[], // 이 센터의 어드민 아이디 (내 아이디와 비교해서 권한 획득)
+    "name":string, // (Nullable) 이 센터 이름
   },
   "owner":
   {
