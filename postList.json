@@ -1,4 +1,4 @@
-GET /postList/{centerNo}
+GET /center/{centerNo}/posts
 {centerNo}로 지정된 센터의 게시글 목록 요청 api (지난 목록 혹은 최근 목록 옵션)
 
 Request Parameter

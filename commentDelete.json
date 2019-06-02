@@ -1,4 +1,4 @@
-DELETE /comment/{commentNo}
+DELETE /post/{postNo}/comment/{commentNo}
 댓글 지우기 api
 
 Request

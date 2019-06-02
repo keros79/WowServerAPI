@@ -1,9 +1,10 @@
-GET /centerList/{userid}
+GET /centers
 내가 가입한 센터 목록 요청 api
 
 Request Parameter
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
+  "userid":string, // 내아이디
 }
 
 Response

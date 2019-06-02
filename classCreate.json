@@ -1,9 +1,8 @@
-POST /class
+POST /center/{centerNo}/class
 강사 클래스 만들기 api
 
 Request
 {
-  "centerNo":number, // 센터 번호
   "userId":string, // 작성자 아이디
   "title":string, // 제목
   "body":string, // (Optional) 본문 내용

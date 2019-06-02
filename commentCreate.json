@@ -1,4 +1,4 @@
-POST /comment/{postNo}
+POST /post/{postNo}/comment
 새 댓글 작성하기 api
 
 Request
