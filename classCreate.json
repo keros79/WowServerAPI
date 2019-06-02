@@ -1,5 +1,5 @@
 POST /class
-클래스 만들기 api
+강사 클래스 만들기 api
 
 Request
 {
@@ -9,7 +9,7 @@ Request
   "body":string, // (Optional) 본문 내용
   "startAt":string, // 시작시각 (UTC)
   "endAt":string, // 종료시각 (UTC)
-  "maxMembers":number, // (Optional) 최대 참여인원 (default 0)
+  "maxMembers":number, // (Optional) 최대 참여인원 (default 0 : 무제한)
 }
 
 Response

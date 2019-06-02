@@ -1,5 +1,5 @@
-DELETE /reservation/bandno/{bandno}/reservationno/{reservationno}
-예약 취소하기 api
+DELETE /center/{centerNo}/reservation/{reservationNo}
+회원용 예약 취소하기 api
 
 Request
 {

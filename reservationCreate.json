@@ -1,5 +1,5 @@
-POST /reservation/bandno/{bandno}/classno/{classno}
-예약하기 api ({classno}가 0이면 자유시간 예약)
+POST /center/{centerNo}/class/{classNo}
+예약하기 api ({classNo}가 0이면 자유시간 예약)
 
 Request
 {

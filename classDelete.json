@@ -1,11 +1,11 @@
-DELETE /class/bandno/{bandNo}/classno/{classNo}/userid/{userid}
+DELETE /center/{centerNo}/class/{classNo}
 클래스 삭제하기 api
 센터에 매니저로 등록된 아이디만 삭제 가능
 
-// Request
-// {
-//   "userId":string, // 작성자 아이디
-// }
+ Request
+ {
+   "userId":string, // 작성자 아이디
+ }
 
 Response
 {
