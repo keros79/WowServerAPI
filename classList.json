@@ -4,8 +4,8 @@ GET /center/{centerNo}/classes
 Request Parameter
 {
    "userId":string, // 내 아이디 (어드민일 경우 예약자 리스트가 포함)
-   "startDate":number, // 시작 날짜 (unix timestamp)
-   "endDate":number, // 종료 날짜 (unix timestamp)
+   "startDate":string, // 시작 날짜 (unix timestamp)
+   "endDate":string, // 종료 날짜 (unix timestamp)
    "ownerId":string[], // (Optional) 선생 아이디 선택
  }
 
