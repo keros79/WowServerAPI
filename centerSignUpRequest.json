@@ -1,0 +1,16 @@
+POST / signupRequest/center/{centerNo}
+
+Request
+{
+    "locale":string,
+    "userid":string,
+    "startAt":string, // UTC
+    "endAt":string, // UTC
+    "maxReservationsNumberWeek":int, // (optional) 1주 간 예약 가능 횟수
+    "maxReservationsNumberMonth":int, // (optional) 1개월 간 예약 가능 횟수
+}
+
+Response
+{
+    "apiVer":string, // rest api 버전 ("1.0")
+}

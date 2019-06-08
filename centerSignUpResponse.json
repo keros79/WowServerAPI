@@ -1,0 +1,11 @@
+POST / signupResponse/center/{centerNo}
+
+Request
+{
+    "userid":string,
+}
+
+Response
+{
+    "apiVer":string, // rest api 버전 ("1.0")
+}
