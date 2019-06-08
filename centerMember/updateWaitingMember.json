@@ -1,0 +1,15 @@
+// 센터용
+// 가입 신청한 멤버중 한명을 선택해 가입 허가함
+// 가입 허가를 했다는 건 해당 센터에 예약을 할 수 있다는 의미
+
+PUT / center/{centerNo}/user/{userid}
+
+Request
+{
+    "userid":string,  // 해당 센터 매니저만 권한 있음
+}
+
+Response
+{
+    "apiVer":string, // rest api 버전 ("1.0")
+}
