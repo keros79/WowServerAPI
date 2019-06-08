@@ -12,7 +12,7 @@ Request
     "userid":string,
     "startAt":string, // UTC (optional)
     "endAt":string, // UTC (optional)
-    "maxReservationsNumber":int // (optional) 예약 가능 횟수
+    "maxReservationsNumber":int, // (optional) 예약 가능 횟수
     "maxReservationsNumberWeek":int, // (optional) 1주 간 예약 가능 횟수
     "maxReservationsNumberMonth":int, // (optional) 1개월 간 예약 가능 횟수
 }

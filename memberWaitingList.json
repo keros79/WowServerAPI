@@ -1,3 +1,6 @@
+// 센터용
+// 가입 대기 중인 회원 조회
+
 GET /center/{centerNo}/waitingUser
 
 Request
@@ -7,5 +10,14 @@ Request
 
 Response
 {
-    "userIdList":string[],
+    "waitingUserList":arrayObject,
+    [
+        "locale":string, 
+        "userid":string,
+        "startAt":string, // UTC (optional)
+        "endAt":string, // UTC (optional)
+        "maxReservationsNumber":int, // (optional) 예약 가능 횟수
+        "maxReservationsNumberWeek":int, // (optional) 1주 간 예약 가능 횟수
+        "maxReservationsNumberMonth":int, // (optional) 1개월 간 예약 가능 횟수
+    ]
 }
