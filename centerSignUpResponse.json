@@ -1,8 +1,8 @@
-POST / signupResponse/center/{centerNo}
+UPDATE / center/{centerNo}/user/{userid}
 
 Request
 {
-    "userid":string,
+    "userid":string,  // 해당 센터 매니저만 권한 있음
 }
 
 Response

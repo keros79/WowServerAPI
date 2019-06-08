@@ -1,11 +1,18 @@
-POST / signupRequest/center/{centerNo}
+POST / center/{centerNo}/user
+
+// 가입 만료는 가입 방식에 따라 3가지로 나뉨
+// 가입 만료가 된다는 것은 해당 센터에 예약을 더이상 못함을 의미
+// 1. 횟수 차감 방식
+// 2. 날짜 마감 방식
+// 3. 1+2 복합형
 
 Request
 {
-    "locale":string,
+    "locale":string, 
     "userid":string,
-    "startAt":string, // UTC
-    "endAt":string, // UTC
+    "startAt":string, // UTC (optional)
+    "endAt":string, // UTC (optional)
+    "maxReservationsNumber":int // (optional) 예약 가능 횟수
     "maxReservationsNumberWeek":int, // (optional) 1주 간 예약 가능 횟수
     "maxReservationsNumberMonth":int, // (optional) 1개월 간 예약 가능 횟수
 }

@@ -1,0 +1,11 @@
+GET /center/{centerNo}/waitingUser
+
+Request
+{
+    "userid":string, // 해당 센터 매니저만 권한 있음
+}
+
+Response
+{
+    "userIdList":string[],
+}
