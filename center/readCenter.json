@@ -1,0 +1,21 @@
+GET /center?locale={ko}&userid={uid}
+내가 가입한 센터 목록 요청 api
+
+Request Parameter
+{
+  "locale":string, // 언어 [ko|en|jp|zh...]
+  "userid":string, // 내아이디
+}
+
+Response
+{
+    "apiVer":string, // rest api 버전 ("1.0")
+    "centerNo":number, // 센터 번호
+    "adminId":string[], // 이 센터의 어드민 아이디
+    "name":string, // (Nullable) 이름
+    "type":string, // 센터 공개여부 ["open"|"closed"]
+    "category":string, // 카테고리
+    "description":string, // (optional) 부가 설명
+    "image":string, // (optional) 센터대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/centerProfile/{centerNo}.jpg")
+    // 미구현 "pushOff":string[]  // (optional) 센터 푸쉬 알림 disable 설정한 세션아이디 리스트 (클라이언트에서 세션아이디를 비교하기 바람)
+}

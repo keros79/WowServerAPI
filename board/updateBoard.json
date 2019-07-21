@@ -1,0 +1,15 @@
+UPDATE /board?number={postNo}
+
+Request Parameter
+{
+    "userid":string,
+    "username":string,
+    "videoURL":string,
+    "body":string
+}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "postNo":number,// 새글 번호
+}

@@ -1,0 +1,6 @@
+DELETE /board?number={postNo}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+}

@@ -1,6 +1,20 @@
 ###
 GET http://ucband.ucwaremobile.com:8899/ping HTTP/1.1
 
-### classList
-GET http://ucband.ucwaremobile.com:8899/classlist/?centerid=hellparty&userid=remake111&startdate=190602&enddate=190602 HTTP/1.1
+### centerList
+GET http://ucband.ucwaremobile.com:8899/centers/?locale=ko&userId=remake111 HTTP/1.1
 
+### classList
+GET http://ucband.ucwaremobile.com:8899/classes/?centerid=hellparty&userid=remake111&startdate=190602&enddate=190602 HTTP/1.1
+
+### createClass
+POST http://ucband.ucwaremobile.com:8899/center/1/127.0.0.1:8000/class
+Content-Type: :application/json
+{
+  "userId":"remake111", // 작성자 아이디
+  "title":"안녕피티", // 제목
+  "body":"", // (Optional) 본문 내용
+  "startAt":string, // 시작시각 (UTC)
+  "endAt":string, // 종료시각 (UTC)
+  "maxMember":number, // (Optional) 최대 참여인원 (default 0 : 무제한)
+}

@@ -1,0 +1,10 @@
+GET /board?number={postNo}
+
+Response
+{
+  "apiVer":string, // rest api 버전 ("1.0")
+  "userid":string,
+  "username":string,
+  "videoURL":string,
+  "body":string
+}

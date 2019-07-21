@@ -4,12 +4,12 @@ POST /center
 Request
 {
   "locale":string, // 언어 [ko|en|jp|zh...]
-  "adminId":string, // 센터 어드민 아이디 (내 아이디)
-  "name":string, // 이름
+  "adminid":string, // 센터 어드민 아이디 (내 아이디)
+  "name":string,
   "type":string, // 센터 공개여부 ["open"|"closed"]
   "category":string, // 카테고리
-  "description":string, // (optional) 부가 설명
-  "image":string, // (optional) 센터대표이미지 url (사이즈??), 없으면 디폴트 이미지 표시 ("http://xxx/centerProfile/{centerNo}.jpg")
+  "description":string, // optional
+  "image":string, // optional 센터대표이미지 url
 }
 
 Response

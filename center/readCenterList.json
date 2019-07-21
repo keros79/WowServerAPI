@@ -1,4 +1,4 @@
-GET /centers
+GET /centerlist?locale={ko}&userid={uid}
 내가 가입한 센터 목록 요청 api
 
 Request Parameter
@@ -11,7 +11,7 @@ Response
 {
   "apiVer":string, // rest api 버전 ("1.0")
   "center":objectArray // 센터 목록
-  [ 
+  [
     {
       "centerNo":number, // 센터 번호
       "adminId":string[], // 이 센터의 어드민 아이디

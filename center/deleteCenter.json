@@ -1,4 +1,4 @@
-DELETE /center/{centerNo}
+DELETE /center/{centerno}
 센터 없애기 api (수정 권한은 클라이언트에서 우선 자체 필터링)
 
 Request
